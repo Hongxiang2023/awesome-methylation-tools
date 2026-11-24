@@ -774,7 +774,7 @@
    "title": "DMRfinder: efficiently identifying differentially methylated regions from MethylC-seq data",
    "journal": "BMC Bioinformatics",
    "year": 2017,
-   "citations": 77,
+   "citations": 78,
    "doi": "10.1186/s12859-017-1909-0"
   },
   {
@@ -2727,7 +2727,7 @@
     "spatial",
     "bs"
    ],
-   "url": "",
+   "url": "https://zhou-lab.github.io/methscope-cli/",
    "title": "MethScope: Ultra-Fast Analysis of Sparse DNA Methylome via Recurrent Pattern Encoding",
    "journal": "CRAN: Contributed Packages",
    "year": 2025,
@@ -3393,7 +3393,7 @@
    "title": "Detection of DNA base modifications by deep recurrent neural network on Oxford Nanopore sequencing data",
    "journal": "Nature Communications",
    "year": 2019,
-   "citations": 297,
+   "citations": 298,
    "doi": "10.1038/s41467-019-10168-2"
   },
   {
@@ -4086,18 +4086,25 @@
   {
    "name": "YAME",
    "functions": [
-    "util"
+    "util",
+    "pipe"
    ],
    "platforms": [
     "bs",
-    "sc"
+    "targeted",
+    "enrich",
+    "sc",
+    "spatial",
+    "ont",
+    "pacbio",
+    "cfdna"
    ],
    "url": "https://github.com/zhou-lab/yame",
-   "title": "",
-   "journal": "",
-   "year": null,
-   "citations": null,
-   "doi": ""
+   "title": "KnowYourCG: Facilitating base-level sparse methylome interpretation",
+   "journal": "Science Advances",
+   "year": 2025,
+   "citations": 7,
+   "doi": "10.1126/sciadv.adw3027"
   },
   {
    "name": "methyLImp",

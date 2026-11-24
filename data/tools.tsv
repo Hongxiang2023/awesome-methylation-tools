@@ -172,7 +172,7 @@ ML workflows for methylation classifiers (Maros)	cancer	array	10.1038/s41596-019
 mepylome	cancer;purity	array	10.1002/aisy.202500778				
 MethylBERT	cancer;dl;deconv	bs;cfdna	10.1038/s41467-025-55920-z				
 MethylNet	dl	array	10.1186/s12859-020-3443-8				
-MethScope	sc;cancer;deconv	sc;spatial;bs	10.32614/cran.package.methscope				
+MethScope	sc;cancer;deconv	sc;spatial;bs	10.32614/cran.package.methscope	https://zhou-lab.github.io/methscope-cli/			
 InfiniumPurify	purity	array	10.1186/s13059-016-1143-5				
 MethylPurify	purity;dm	bs	10.1186/s13059-014-0419-x				
 PAMES	purity	array	10.1093/bioinformatics/bty011				
@@ -259,7 +259,7 @@ scAI	integ	sc	10.1186/s13059-020-1932-8
 GLUE	integ;dl	sc	10.1038/s41587-022-01284-4				
 scMelody	sc	sc	10.3389/fbioe.2022.842019				
 MethylVI	sc;dl;integ	sc		https://openreview.net/forum?id=Mg2DM0F3AY	NeurIPS GenBio Workshop	2023	A deep generative model of single-cell methylomic data
-YAME	util	bs;sc		https://github.com/zhou-lab/yame			
+YAME	util;pipe	bs;targeted;enrich;sc;spatial;ont;pacbio;cfdna	10.1126/sciadv.adw3027	https://github.com/zhou-lab/yame			
 methyLImp	impute	array	10.1093/bioinformatics/btz134				
 methyLImp2	impute	array	10.1093/bioinformatics/btae001				
 BoostMe	impute	bs	10.1186/s12864-018-4766-y				

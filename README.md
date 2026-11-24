@@ -68,7 +68,7 @@ _274 tools. Metadata from Crossref, refreshed 2026-11-24. Each tool is listed on
 | SMRT kinetics (original) | PacBio | Nature Methods | 2010 | 1,401 | [Direct detection of DNA methylation during single-molecule, real-time sequencing](https://doi.org/10.1038/nmeth.1459) |
 | Nanopolish | Nanopore | Nature Methods | 2017 | 1,197 | [Detecting DNA cytosine methylation using nanopore sequencing](https://doi.org/10.1038/nmeth.4184) |
 | signalAlign | Nanopore | Nature Methods | 2017 | 519 | [Mapping DNA methylation with high-throughput nanopore sequencing](https://doi.org/10.1038/nmeth.4189) |
-| DeepMod | Nanopore | Nature Communications | 2019 | 297 | [Detection of DNA base modifications by deep recurrent neural network on Oxford Nanopore sequencing data](https://doi.org/10.1038/s41467-019-10168-2) |
+| DeepMod | Nanopore | Nature Communications | 2019 | 298 | [Detection of DNA base modifications by deep recurrent neural network on Oxford Nanopore sequencing data](https://doi.org/10.1038/s41467-019-10168-2) |
 | Tombo | Nanopore | bioRxiv (preprint) | 2016 | 287 | [De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing](https://doi.org/10.1101/094672) |
 | DeepSignal | Nanopore | Bioinformatics | 2019 | 241 | [DeepSignal: detecting DNA methylation state from Nanopore sequencing reads using deep-learning](https://doi.org/10.1093/bioinformatics/btz276) |
 | nanodisco | Nanopore | Nature Methods | 2021 | 208 | [Discovering multiple types of DNA methylation from bacteria and microbiome using nanopore sequencing](https://doi.org/10.1038/s41592-021-01109-3) |
@@ -136,7 +136,7 @@ _274 tools. Metadata from Crossref, refreshed 2026-11-24. Each tool is listed on
 | Probe Lasso | Array (Infinium) | Methods | 2015 | 123 | [Probe Lasso: A novel method to rope in differentially methylated regions with 450K DNA methylation data](https://doi.org/10.1016/j.ymeth.2014.10.036) |
 | MACAU | Short-read (WGBS / RRBS / EM-seq) | PLOS Genetics | 2015 | 115 | [A Flexible, Efficient Binomial Mixed Model for Identifying Differential DNA Methylation in Bisulfite Sequencing Data](https://doi.org/10.1371/journal.pgen.1005650) |
 | edgeR (methylation) | Short-read (WGBS / RRBS / EM-seq) | F1000Research | 2017 | 86 | [Differential methylation analysis of reduced representation bisulfite sequencing experiments using edgeR](https://doi.org/10.12688/f1000research.13196.1) |
-| DMRfinder | Short-read (WGBS / RRBS / EM-seq) | BMC Bioinformatics | 2017 | 77 | [DMRfinder: efficiently identifying differentially methylated regions from MethylC-seq data](https://doi.org/10.1186/s12859-017-1909-0) |
+| DMRfinder | Short-read (WGBS / RRBS / EM-seq) | BMC Bioinformatics | 2017 | 78 | [DMRfinder: efficiently identifying differentially methylated regions from MethylC-seq data](https://doi.org/10.1186/s12859-017-1909-0) |
 | DMRcaller | Short-read (WGBS / RRBS / EM-seq) | Nucleic Acids Research | 2018 | 66 | [DMRcaller: a versatile R/Bioconductor package for detection and visualization of differentially methylated regions in CpG and non-CpG contexts](https://doi.org/10.1093/nar/gky602) |
 | mCSEA | Array (Infinium) | Bioinformatics | 2019 | 59 | [mCSEA: detecting subtle differentially methylated regions](https://doi.org/10.1093/bioinformatics/btz096) |
 | ipDMR | Array (Infinium) | Bioinformatics | 2021 | 55 | [ipDMR: identification of differentially methylated regions with interval P-values](https://doi.org/10.1093/bioinformatics/btaa732) |
@@ -304,7 +304,7 @@ _274 tools. Metadata from Crossref, refreshed 2026-11-24. Each tool is listed on
 | SINBAD | Single-cell | bioRxiv (preprint) | 2021 | 4 | [SINBAD: a flexible tool for single cell DNA methylation data](https://doi.org/10.1101/2021.10.23.465577) |
 | vmrseq | Single-cell | Genome Biology | 2024 | 3 | [vmrseq: probabilistic modeling of single-cell methylation heterogeneity](https://doi.org/10.1186/s13059-024-03457-7) |
 | Amethyst | Single-cell | Communications Biology | 2025 | 1 | [Single-cell DNA methylation analysis tool Amethyst resolves distinct non-CG methylation patterns in human astrocytes and oligodendrocytes](https://doi.org/10.1038/s42003-025-08859-2) |
-| MethScope | Single-cell, Spatial, Short-read (WGBS / RRBS / EM-seq) | CRAN: Contributed Packages | 2025 | 0 | [MethScope: Ultra-Fast Analysis of Sparse DNA Methylome via Recurrent Pattern Encoding](https://doi.org/10.32614/cran.package.methscope) |
+| [MethScope](https://zhou-lab.github.io/methscope-cli/) | Single-cell, Spatial, Short-read (WGBS / RRBS / EM-seq) | CRAN: Contributed Packages | 2025 | 0 | [MethScope: Ultra-Fast Analysis of Sparse DNA Methylome via Recurrent Pattern Encoding](https://doi.org/10.32614/cran.package.methscope) |
 | [MethylVI](https://openreview.net/forum?id=Mg2DM0F3AY) | Single-cell | NeurIPS GenBio Workshop | 2023 | – | – |
 
 ### Multi-omics integration
@@ -413,10 +413,10 @@ _274 tools. Metadata from Crossref, refreshed 2026-11-24. Each tool is listed on
 | Infinium probe annotation (Zhou) | Array (Infinium) | Nucleic Acids Research | 2016 | 328 | [Comprehensive characterization, annotation and innovative use of Infinium DNA methylation BeadChip probes](https://doi.org/10.1093/nar/gkw967) |
 | methrix | Short-read (WGBS / RRBS / EM-seq) | Bioinformatics | 2021 | 17 | [Methrix: an R/Bioconductor package for systematic aggregation and analysis of bisulfite sequencing data](https://doi.org/10.1093/bioinformatics/btaa1048) |
 | wgbstools | Short-read (WGBS / RRBS / EM-seq), cfDNA | Life Science Alliance | 2026 | 11 | [wgbstools : a computational suite for DNA methylation sequencing data analysis](https://doi.org/10.26508/lsa.202503514) |
+| [YAME](https://github.com/zhou-lab/yame) | Short-read (WGBS / RRBS / EM-seq), Targeted / amplicon, Enrichment (MeDIP / MBD), Single-cell, Spatial, Nanopore, PacBio, cfDNA | Science Advances | 2025 | 7 | [KnowYourCG: Facilitating base-level sparse methylome interpretation](https://doi.org/10.1126/sciadv.adw3027) |
 | DMtools | Short-read (WGBS / RRBS / EM-seq) | bioRxiv (preprint) | 2023 | 1 | [DNA Methylation (DM) data format and DMtools for efficient DNA methylation data storage and analysis](https://doi.org/10.1101/2023.11.27.568779) |
 | [modkit](https://github.com/nanoporetech/modkit) | Nanopore, PacBio | – | – | – | – |
 | [pb-CpG-tools](https://github.com/PacificBiosciences/pb-CpG-tools) | PacBio | – | – | – | – |
-| [YAME](https://github.com/zhou-lab/yame) | Short-read (WGBS / RRBS / EM-seq), Single-cell | – | – | – | – |
 
 ### Reviews and benchmarks
 
