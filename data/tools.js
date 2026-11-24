@@ -1,0 +1,4430 @@
+window.METH_TOOLS = {
+ "updated": "2026-11-24",
+ "vocab": {
+  "functions": {
+   "aln": "Alignment & methylation calling",
+   "modcall": "Long-read modification calling",
+   "qc": "QC, preprocessing & normalization",
+   "dm": "Differential methylation",
+   "seg": "Methylome segmentation",
+   "deconv": "Cell-type deconvolution",
+   "clock": "Epigenetic clocks & aging",
+   "cancer": "Cancer classification & diagnostics",
+   "cfdna": "cfDNA & tissue of origin",
+   "purity": "Tumor purity & copy number",
+   "het": "Allele-specific, haplotype & heterogeneity",
+   "snp": "Variant calling from bisulfite data",
+   "impute": "Imputation & prediction",
+   "sc": "Single-cell clustering & analysis",
+   "integ": "Multi-omics integration",
+   "enrich": "Enrichment & functional interpretation",
+   "ewas": "EWAS & association statistics",
+   "viz": "Visualization",
+   "db": "Databases & atlases",
+   "pipe": "Pipelines & workflows",
+   "dl": "Deep learning & foundation models",
+   "hmc": "5hmC & other modifications",
+   "util": "Data formats & utilities"
+  },
+  "platforms": {
+   "array": "Array (Infinium)",
+   "bs": "Short-read (WGBS / RRBS / EM-seq)",
+   "targeted": "Targeted / amplicon",
+   "enrich": "Enrichment (MeDIP / MBD)",
+   "sc": "Single-cell",
+   "spatial": "Spatial",
+   "ont": "Nanopore",
+   "pacbio": "PacBio",
+   "cfdna": "cfDNA"
+  }
+ },
+ "tools": [
+  {
+   "name": "Bismark",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications",
+   "journal": "Bioinformatics",
+   "year": 2011,
+   "citations": 5376,
+   "doi": "10.1093/bioinformatics/btr167"
+  },
+  {
+   "name": "BSMAP",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BSMAP: whole genome bisulfite sequence MAPping program",
+   "journal": "BMC Bioinformatics",
+   "year": 2009,
+   "citations": 1144,
+   "doi": "10.1186/1471-2105-10-232"
+  },
+  {
+   "name": "BS-Seeker2",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BS-Seeker2: a versatile aligning pipeline for bisulfite sequencing data",
+   "journal": "BMC Genomics",
+   "year": 2013,
+   "citations": 410,
+   "doi": "10.1186/1471-2164-14-774"
+  },
+  {
+   "name": "BS-Seeker3",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BS-Seeker3: ultrafast pipeline for bisulfite sequencing",
+   "journal": "BMC Bioinformatics",
+   "year": 2018,
+   "citations": 42,
+   "doi": "10.1186/s12859-018-2120-7"
+  },
+  {
+   "name": "bwa-meth",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "https://github.com/brentp/bwa-meth",
+   "title": "Fast and accurate alignment of long bisulfite-seq reads",
+   "journal": "arXiv (preprint)",
+   "year": 2014,
+   "citations": null,
+   "doi": "10.48550/arxiv.1401.1129"
+  },
+  {
+   "name": "BSBolt",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BiSulfite Bolt: A bisulfite sequencing analysis platform",
+   "journal": "GigaScience",
+   "year": 2021,
+   "citations": 86,
+   "doi": "10.1093/gigascience/giab033"
+  },
+  {
+   "name": "BISCUIT",
+   "functions": [
+    "aln",
+    "snp"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "BISCUIT: an efficient, standards-compliant tool suite for simultaneous genetic and epigenetic inference in bulk and single-cell studies",
+   "journal": "Nucleic Acids Research",
+   "year": 2024,
+   "citations": 53,
+   "doi": "10.1093/nar/gkae097"
+  },
+  {
+   "name": "gemBS",
+   "functions": [
+    "aln",
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "gemBS: high throughput processing for DNA methylation data from bisulfite sequencing",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 63,
+   "doi": "10.1093/bioinformatics/bty690"
+  },
+  {
+   "name": "methylpy",
+   "functions": [
+    "aln",
+    "dm"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "Human body epigenome maps reveal noncanonical DNA methylation variation",
+   "journal": "Nature",
+   "year": 2015,
+   "citations": 682,
+   "doi": "10.1038/nature14465"
+  },
+  {
+   "name": "BatMeth2",
+   "functions": [
+    "aln",
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "An integrated package for bisulfite DNA methylation data analysis with Indel-sensitive mapping",
+   "journal": "BMC Bioinformatics",
+   "year": 2019,
+   "citations": 118,
+   "doi": "10.1186/s12859-018-2593-4"
+  },
+  {
+   "name": "WALT",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "WALT: fast and accurate read mapping for bisulfite sequencing",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 71,
+   "doi": "10.1093/bioinformatics/btw490"
+  },
+  {
+   "name": "abismal",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Fast and memory-efficient mapping of short bisulfite sequencing reads using a two-letter alphabet",
+   "journal": "NAR Genomics and Bioinformatics",
+   "year": 2021,
+   "citations": 26,
+   "doi": "10.1093/nargab/lqab115"
+  },
+  {
+   "name": "BRAT-nova",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BRAT-nova: fast and accurate mapping of bisulfite-treated reads",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 20,
+   "doi": "10.1093/bioinformatics/btw226"
+  },
+  {
+   "name": "segemehl",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Fast and sensitive mapping of bisulfite-treated sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 49,
+   "doi": "10.1093/bioinformatics/bts254"
+  },
+  {
+   "name": "ERNE-BS5",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "ERNE-BS5",
+   "journal": "Proceedings of the ACM Conference on Bioinformatics, Computational Biology and Biomedicine",
+   "year": 2012,
+   "citations": 18,
+   "doi": "10.1145/2382936.2382938"
+  },
+  {
+   "name": "Arioc",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Arioc: GPU-accelerated alignment of short bisulfite-treated reads",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 20,
+   "doi": "10.1093/bioinformatics/bty167"
+  },
+  {
+   "name": "HISAT-3N",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Rapid and accurate alignment of nucleotide conversion sequencing reads with HISAT-3N",
+   "journal": "Genome Research",
+   "year": 2021,
+   "citations": 372,
+   "doi": "10.1101/gr.275193.120"
+  },
+  {
+   "name": "RRBSMAP",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "RRBSMAP: a fast, accurate and user-friendly alignment tool for reduced representation bisulfite sequencing",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 84,
+   "doi": "10.1093/bioinformatics/btr668"
+  },
+  {
+   "name": "MethylCoder",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethylCoder: software pipeline for bisulfite-treated sequences",
+   "journal": "Bioinformatics",
+   "year": 2011,
+   "citations": 73,
+   "doi": "10.1093/bioinformatics/btr394"
+  },
+  {
+   "name": "FAME",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "Efficiently quantifying DNA methylation for bulk- and single-cell bisulfite data",
+   "journal": "Bioinformatics",
+   "year": 2023,
+   "citations": 1,
+   "doi": "10.1093/bioinformatics/btad386"
+  },
+  {
+   "name": "scBS-map",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Using local alignment to enhance single-cell bisulfite sequencing data efficiency",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 27,
+   "doi": "10.1093/bioinformatics/btz125"
+  },
+  {
+   "name": "DNMTools (MethPipe)",
+   "functions": [
+    "aln",
+    "seg",
+    "dm",
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "A Reference Methylome Database and Analysis Pipeline to Facilitate Integrative and Comparative Epigenomics",
+   "journal": "PLoS ONE",
+   "year": 2013,
+   "citations": 417,
+   "doi": "10.1371/journal.pone.0081148"
+  },
+  {
+   "name": "MethylDackel",
+   "functions": [
+    "aln",
+    "util"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "https://github.com/dpryan79/MethylDackel",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "Trim Galore",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "https://github.com/FelixKrueger/TrimGalore",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "BSeQC",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BSeQC: quality control of bisulfite sequencing experiments",
+   "journal": "Bioinformatics",
+   "year": 2013,
+   "citations": 46,
+   "doi": "10.1093/bioinformatics/btt548"
+  },
+  {
+   "name": "MOABS",
+   "functions": [
+    "aln",
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MOABS: model based analysis of bisulfite sequencing data",
+   "journal": "Genome Biology",
+   "year": 2014,
+   "citations": 288,
+   "doi": "10.1186/gb-2014-15-2-r38"
+  },
+  {
+   "name": "Bis-SNP",
+   "functions": [
+    "snp"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Bis-SNP: Combined DNA methylation and SNP calling for Bisulfite-seq data",
+   "journal": "Genome Biology",
+   "year": 2012,
+   "citations": 262,
+   "doi": "10.1186/gb-2012-13-7-r61"
+  },
+  {
+   "name": "BS-SNPer",
+   "functions": [
+    "snp"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BS-SNPer: SNP calling in bisulfite-seq data",
+   "journal": "Bioinformatics",
+   "year": 2015,
+   "citations": 88,
+   "doi": "10.1093/bioinformatics/btv507"
+  },
+  {
+   "name": "MethylExtract",
+   "functions": [
+    "snp",
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethylExtract: High-Quality methylation maps and SNV calling from whole genome bisulfite sequencing data",
+   "journal": "F1000Research",
+   "year": 2013,
+   "citations": 46,
+   "doi": "10.12688/f1000research.2-217.v1"
+  },
+  {
+   "name": "CGmapTools",
+   "functions": [
+    "snp",
+    "het",
+    "util"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "CGmapTools improves the precision of heterozygous SNV calls and supports allele-specific methylation detection and visualization in bisulfite-sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 208,
+   "doi": "10.1093/bioinformatics/btx595"
+  },
+  {
+   "name": "Revelio",
+   "functions": [
+    "snp"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Manipulating base quality scores enables variant calling from bisulfite sequencing alignments using conventional bayesian approaches",
+   "journal": "BMC Genomics",
+   "year": 2022,
+   "citations": 19,
+   "doi": "10.1186/s12864-022-08691-6"
+  },
+  {
+   "name": "nf-core/methylseq",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "The nf-core framework for community-curated bioinformatics pipelines",
+   "journal": "Nature Biotechnology",
+   "year": 2020,
+   "citations": 4544,
+   "doi": "10.1038/s41587-020-0439-x"
+  },
+  {
+   "name": "wg-blimp",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "wg-blimp: an end-to-end analysis pipeline for whole genome bisulfite sequencing data",
+   "journal": "BMC Bioinformatics",
+   "year": 2020,
+   "citations": 20,
+   "doi": "10.1186/s12859-020-3470-5"
+  },
+  {
+   "name": "msPIPE",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "msPIPE: a pipeline for the analysis and visualization of whole-genome bisulfite sequencing data",
+   "journal": "BMC Bioinformatics",
+   "year": 2022,
+   "citations": 16,
+   "doi": "10.1186/s12859-022-04925-2"
+  },
+  {
+   "name": "Bicycle",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Bicycle: a bioinformatics pipeline to analyze bisulfite sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 24,
+   "doi": "10.1093/bioinformatics/btx778"
+  },
+  {
+   "name": "MethylStar",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "MethylStar: A fast and robust pre-processing pipeline for bulk or single-cell whole-genome bisulfite sequencing data",
+   "journal": "BMC Genomics",
+   "year": 2020,
+   "citations": 33,
+   "doi": "10.1186/s12864-020-06886-3"
+  },
+  {
+   "name": "SAAP-RRBS",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "SAAP-RRBS: streamlined analysis and annotation pipeline for reduced representation bisulfite sequencing",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 58,
+   "doi": "10.1093/bioinformatics/bts337"
+  },
+  {
+   "name": "snakePipes",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "snakePipes: facilitating flexible, scalable and integrative epigenomic analysis",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 190,
+   "doi": "10.1093/bioinformatics/btz436"
+  },
+  {
+   "name": "EpiDiverse EWAS",
+   "functions": [
+    "pipe",
+    "ewas"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "The EpiDiverse Plant Epigenome-Wide Association Studies (EWAS) Pipeline",
+   "journal": "Epigenomes",
+   "year": 2021,
+   "citations": 19,
+   "doi": "10.3390/epigenomes5020012"
+  },
+  {
+   "name": "methylKit",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "methylKit: a comprehensive R package for the analysis of genome-wide DNA methylation profiles",
+   "journal": "Genome Biology",
+   "year": 2012,
+   "citations": 2186,
+   "doi": "10.1186/gb-2012-13-10-r87"
+  },
+  {
+   "name": "DSS",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "A Bayesian hierarchical model to detect differentially methylated loci from single nucleotide resolution sequencing data",
+   "journal": "Nucleic Acids Research",
+   "year": 2014,
+   "citations": 567,
+   "doi": "10.1093/nar/gku154"
+  },
+  {
+   "name": "DSS (general design)",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Differential methylation analysis for BS-seq data under general experimental design",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 518,
+   "doi": "10.1093/bioinformatics/btw026"
+  },
+  {
+   "name": "bsseq (BSmooth)",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BSmooth: from whole genome bisulfite sequencing reads to differentially methylated regions",
+   "journal": "Genome Biology",
+   "year": 2012,
+   "citations": 787,
+   "doi": "10.1186/gb-2012-13-10-r83"
+  },
+  {
+   "name": "metilene",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "metilene: fast and sensitive calling of differentially methylated regions from bisulfite sequencing data",
+   "journal": "Genome Research",
+   "year": 2016,
+   "citations": 512,
+   "doi": "10.1101/gr.196394.115"
+  },
+  {
+   "name": "methylSig",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethylSig: a whole genome DNA methylation analysis pipeline",
+   "journal": "Bioinformatics",
+   "year": 2014,
+   "citations": 210,
+   "doi": "10.1093/bioinformatics/btu339"
+  },
+  {
+   "name": "RADMeth",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Using beta-binomial regression for high-precision differential methylation analysis in multifactor whole-genome bisulfite sequencing experiments",
+   "journal": "BMC Bioinformatics",
+   "year": 2014,
+   "citations": 182,
+   "doi": "10.1186/1471-2105-15-215"
+  },
+  {
+   "name": "dmrseq",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Detection and accurate false discovery rate control of differentially methylated regions from whole genome bisulfite sequencing",
+   "journal": "Biostatistics",
+   "year": 2019,
+   "citations": 173,
+   "doi": "10.1093/biostatistics/kxy007"
+  },
+  {
+   "name": "DMRfinder",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "DMRfinder: efficiently identifying differentially methylated regions from MethylC-seq data",
+   "journal": "BMC Bioinformatics",
+   "year": 2017,
+   "citations": 77,
+   "doi": "10.1186/s12859-017-1909-0"
+  },
+  {
+   "name": "BiSeq",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs",
+    "targeted"
+   ],
+   "url": "",
+   "title": "Detection of significantly differentially methylated regions in targeted bisulfite sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2013,
+   "citations": 242,
+   "doi": "10.1093/bioinformatics/btt263"
+  },
+  {
+   "name": "Defiant",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Defiant: (DMRs: easy, fast, identification and ANnoTation) identifies differentially Methylated regions from iron-deficient rat hippocampus",
+   "journal": "BMC Bioinformatics",
+   "year": 2018,
+   "citations": 37,
+   "doi": "10.1186/s12859-018-2037-1"
+  },
+  {
+   "name": "comb-p",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "Comb-p: software for combining, analyzing, grouping and correcting spatially correlated P -values",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 440,
+   "doi": "10.1093/bioinformatics/bts545"
+  },
+  {
+   "name": "DMRcaller",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "DMRcaller: a versatile R/Bioconductor package for detection and visualization of differentially methylated regions in CpG and non-CpG contexts",
+   "journal": "Nucleic Acids Research",
+   "year": 2018,
+   "citations": 66,
+   "doi": "10.1093/nar/gky602"
+  },
+  {
+   "name": "HOME",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "HOME: a histogram based machine learning approach for effective identification of differentially methylated regions",
+   "journal": "BMC Bioinformatics",
+   "year": 2019,
+   "citations": 38,
+   "doi": "10.1186/s12859-019-2845-y"
+  },
+  {
+   "name": "swDMR",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "swDMR: A Sliding Window Approach to Identify Differentially Methylated Regions Based on Whole Genome Bisulfite Sequencing",
+   "journal": "PLOS ONE",
+   "year": 2015,
+   "citations": 43,
+   "doi": "10.1371/journal.pone.0132866"
+  },
+  {
+   "name": "edgeR (methylation)",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Differential methylation analysis of reduced representation bisulfite sequencing experiments using edgeR",
+   "journal": "F1000Research",
+   "year": 2017,
+   "citations": 86,
+   "doi": "10.12688/f1000research.13196.1"
+  },
+  {
+   "name": "MACAU",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "A Flexible, Efficient Binomial Mixed Model for Identifying Differential DNA Methylation in Bisulfite Sequencing Data",
+   "journal": "PLOS Genetics",
+   "year": 2015,
+   "citations": 115,
+   "doi": "10.1371/journal.pgen.1005650"
+  },
+  {
+   "name": "methrix",
+   "functions": [
+    "util",
+    "qc"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Methrix: an R/Bioconductor package for systematic aggregation and analysis of bisulfite sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2021,
+   "citations": 17,
+   "doi": "10.1093/bioinformatics/btaa1048"
+  },
+  {
+   "name": "CpGtools",
+   "functions": [
+    "dm",
+    "util"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "CpGtools: a python package for DNA methylation analysis",
+   "journal": "Bioinformatics",
+   "year": 2021,
+   "citations": 36,
+   "doi": "10.1093/bioinformatics/btz916"
+  },
+  {
+   "name": "MethylC-analyzer",
+   "functions": [
+    "dm",
+    "pipe"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethylC-analyzer: a comprehensive downstream pipeline for the analysis of genome-wide DNA methylation",
+   "journal": "Botanical Studies",
+   "year": 2023,
+   "citations": 7,
+   "doi": "10.1186/s40529-022-00366-5"
+  },
+  {
+   "name": "DMRcate",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "De novo identification of differentially methylated regions in the human genome",
+   "journal": "Epigenetics & Chromatin",
+   "year": 2015,
+   "citations": 915,
+   "doi": "10.1186/1756-8935-8-6"
+  },
+  {
+   "name": "bumphunter",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Bump hunting to identify differentially methylated regions in epigenetic epidemiology studies",
+   "journal": "International Journal of Epidemiology",
+   "year": 2012,
+   "citations": 660,
+   "doi": "10.1093/ije/dyr238"
+  },
+  {
+   "name": "limma",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "limma powers differential expression analyses for RNA-sequencing and microarray studies",
+   "journal": "Nucleic Acids Research",
+   "year": 2015,
+   "citations": 39809,
+   "doi": "10.1093/nar/gkv007"
+  },
+  {
+   "name": "Probe Lasso",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Probe Lasso: A novel method to rope in differentially methylated regions with 450K DNA methylation data",
+   "journal": "Methods",
+   "year": 2015,
+   "citations": 123,
+   "doi": "10.1016/j.ymeth.2014.10.036"
+  },
+  {
+   "name": "mCSEA",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "mCSEA: detecting subtle differentially methylated regions",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 59,
+   "doi": "10.1093/bioinformatics/btz096"
+  },
+  {
+   "name": "coMethDMR",
+   "functions": [
+    "dm",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "coMethDMR: accurate identification of co-methylated and differentially methylated regions in epigenome-wide association studies with continuous phenotypes",
+   "journal": "Nucleic Acids Research",
+   "year": 2019,
+   "citations": 42,
+   "doi": "10.1093/nar/gkz590"
+  },
+  {
+   "name": "ipDMR",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ipDMR: identification of differentially methylated regions with interval P-values",
+   "journal": "Bioinformatics",
+   "year": 2021,
+   "citations": 55,
+   "doi": "10.1093/bioinformatics/btaa732"
+  },
+  {
+   "name": "minfi",
+   "functions": [
+    "qc",
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays",
+   "journal": "Bioinformatics",
+   "year": 2014,
+   "citations": 4271,
+   "doi": "10.1093/bioinformatics/btu049"
+  },
+  {
+   "name": "ChAMP",
+   "functions": [
+    "qc",
+    "dm",
+    "pipe"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ChAMP: updated methylation analysis pipeline for Illumina BeadChips",
+   "journal": "Bioinformatics",
+   "year": 2017,
+   "citations": 978,
+   "doi": "10.1093/bioinformatics/btx513"
+  },
+  {
+   "name": "RnBeads 2.0",
+   "functions": [
+    "qc",
+    "dm",
+    "pipe"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "RnBeads 2.0: comprehensive analysis of DNA methylation data",
+   "journal": "Genome Biology",
+   "year": 2019,
+   "citations": 339,
+   "doi": "10.1186/s13059-019-1664-9"
+  },
+  {
+   "name": "SeSAMe",
+   "functions": [
+    "qc",
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "SeSAMe: reducing artifactual detection of DNA methylation by Infinium BeadChips in genomic deletions",
+   "journal": "Nucleic Acids Research",
+   "year": 2018,
+   "citations": 315,
+   "doi": "10.1093/nar/gky691"
+  },
+  {
+   "name": "wateRmelon",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A data-driven approach to preprocessing Illumina 450K methylation array data",
+   "journal": "BMC Genomics",
+   "year": 2013,
+   "citations": 1088,
+   "doi": "10.1186/1471-2164-14-293"
+  },
+  {
+   "name": "ENmix",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ENmix: a novel background correction method for Illumina HumanMethylation450 BeadChip",
+   "journal": "Nucleic Acids Research",
+   "year": 2016,
+   "citations": 411,
+   "doi": "10.1093/nar/gkv907"
+  },
+  {
+   "name": "meffil",
+   "functions": [
+    "qc",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Meffil: efficient normalization and analysis of very large DNA methylation datasets",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 314,
+   "doi": "10.1093/bioinformatics/bty476"
+  },
+  {
+   "name": "ewastools",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Identifying mislabeled and contaminated DNA methylation microarray data: an extended quality control toolset with examples from GEO",
+   "journal": "Clinical Epigenetics",
+   "year": 2018,
+   "citations": 154,
+   "doi": "10.1186/s13148-018-0504-1"
+  },
+  {
+   "name": "missMethyl",
+   "functions": [
+    "qc",
+    "dm",
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "missMethyl: an R package for analyzing data from Illumina’s HumanMethylation450 platform",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 842,
+   "doi": "10.1093/bioinformatics/btv560"
+  },
+  {
+   "name": "SWAN",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "SWAN: Subset-quantile Within Array Normalization for Illumina Infinium HumanMethylation450 BeadChips",
+   "journal": "Genome Biology",
+   "year": 2012,
+   "citations": 729,
+   "doi": "10.1186/gb-2012-13-6-r44"
+  },
+  {
+   "name": "BMIQ",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A beta-mixture quantile normalization method for correcting probe design bias in Illumina Infinium 450 k DNA methylation data",
+   "journal": "Bioinformatics",
+   "year": 2013,
+   "citations": 1562,
+   "doi": "10.1093/bioinformatics/bts680"
+  },
+  {
+   "name": "Funnorm",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Functional normalization of 450k methylation array data improves replication in large cancer studies",
+   "journal": "Genome Biology",
+   "year": 2014,
+   "citations": 772,
+   "doi": "10.1186/s13059-014-0503-2"
+  },
+  {
+   "name": "noob",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Low-level processing of Illumina Infinium DNA Methylation BeadArrays",
+   "journal": "Nucleic Acids Research",
+   "year": 2013,
+   "citations": 862,
+   "doi": "10.1093/nar/gkt090"
+  },
+  {
+   "name": "ComBat",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Adjusting batch effects in microarray expression data using empirical Bayes methods",
+   "journal": "Biostatistics",
+   "year": 2007,
+   "citations": 8433,
+   "doi": "10.1093/biostatistics/kxj037"
+  },
+  {
+   "name": "sva",
+   "functions": [
+    "qc",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "The sva package for removing batch effects and other unwanted variation in high-throughput experiments",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 6140,
+   "doi": "10.1093/bioinformatics/bts034"
+  },
+  {
+   "name": "RUVm",
+   "functions": [
+    "qc",
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Removing unwanted variation in a differential methylation analysis of Illumina HumanMethylation450 array data",
+   "journal": "Nucleic Acids Research",
+   "year": 2015,
+   "citations": 86,
+   "doi": "10.1093/nar/gkv526"
+  },
+  {
+   "name": "MethylAid",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethylAid: visual and interactive quality control of large Illumina 450k datasets",
+   "journal": "Bioinformatics",
+   "year": 2014,
+   "citations": 170,
+   "doi": "10.1093/bioinformatics/btu566"
+  },
+  {
+   "name": "shinyMethyl",
+   "functions": [
+    "qc",
+    "viz"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "shinyMethyl: interactive quality control of Illumina 450k DNA methylation arrays in R",
+   "journal": "F1000Research",
+   "year": 2014,
+   "citations": 112,
+   "doi": "10.12688/f1000research.4680.2"
+  },
+  {
+   "name": "RELIC",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "RELIC: a novel dye-bias correction method for Illumina Methylation BeadChip",
+   "journal": "BMC Genomics",
+   "year": 2017,
+   "citations": 139,
+   "doi": "10.1186/s12864-016-3426-3"
+  },
+  {
+   "name": "lumi",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "lumi : a pipeline for processing Illumina microarray",
+   "journal": "Bioinformatics",
+   "year": 2008,
+   "citations": 1905,
+   "doi": "10.1093/bioinformatics/btn224"
+  },
+  {
+   "name": "IMA",
+   "functions": [
+    "qc",
+    "dm"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "IMA: an R package for high-throughput analysis of Illumina's 450K Infinium methylation data",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 259,
+   "doi": "10.1093/bioinformatics/bts013"
+  },
+  {
+   "name": "methylationArrayAnalysis",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A cross-package Bioconductor workflow for analysing methylation array data",
+   "journal": "F1000Research",
+   "year": 2016,
+   "citations": 121,
+   "doi": "10.12688/f1000research.8839.2"
+  },
+  {
+   "name": "Infinium probe annotation (Zhou)",
+   "functions": [
+    "util",
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Comprehensive characterization, annotation and innovative use of Infinium DNA methylation BeadChip probes",
+   "journal": "Nucleic Acids Research",
+   "year": 2016,
+   "citations": 328,
+   "doi": "10.1093/nar/gkw967"
+  },
+  {
+   "name": "EPIC probe evaluation (Pidsley)",
+   "functions": [
+    "util",
+    "qc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Critical evaluation of the Illumina MethylationEPIC BeadChip microarray for whole-genome DNA methylation profiling",
+   "journal": "Genome Biology",
+   "year": 2016,
+   "citations": 1386,
+   "doi": "10.1186/s13059-016-1066-1"
+  },
+  {
+   "name": "GOmeth",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Gene set enrichment analysis for genome-wide DNA methylation data",
+   "journal": "Genome Biology",
+   "year": 2021,
+   "citations": 150,
+   "doi": "10.1186/s13059-021-02388-x"
+  },
+  {
+   "name": "methylGSA",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "methylGSA: a Bioconductor package and Shiny app for DNA methylation data length bias adjustment in gene set testing",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 193,
+   "doi": "10.1093/bioinformatics/bty892"
+  },
+  {
+   "name": "ebGSEA",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ebGSEA: an improved Gene Set Enrichment Analysis method for Epigenome-Wide-Association Studies",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 26,
+   "doi": "10.1093/bioinformatics/btz073"
+  },
+  {
+   "name": "LOLA",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "LOLA: enrichment analysis for genomic region sets and regulatory elements in R and Bioconductor",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 481,
+   "doi": "10.1093/bioinformatics/btv612"
+  },
+  {
+   "name": "GREAT",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "GREAT improves functional interpretation of cis-regulatory regions",
+   "journal": "Nature Biotechnology",
+   "year": 2010,
+   "citations": 4661,
+   "doi": "10.1038/nbt.1630"
+  },
+  {
+   "name": "KnowYourCG",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "array",
+    "bs",
+    "sc",
+    "spatial"
+   ],
+   "url": "",
+   "title": "KnowYourCG: Facilitating base-level sparse methylome interpretation",
+   "journal": "Science Advances",
+   "year": 2025,
+   "citations": 7,
+   "doi": "10.1126/sciadv.adw3027"
+  },
+  {
+   "name": "ELMER",
+   "functions": [
+    "integ",
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ELMER v.2: an R/Bioconductor package to reconstruct gene regulatory networks from DNA methylation and transcriptome profiles",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 118,
+   "doi": "10.1093/bioinformatics/bty902"
+  },
+  {
+   "name": "MethylMix",
+   "functions": [
+    "integ"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethylMix: an R package for identifying DNA methylation-driven genes",
+   "journal": "Bioinformatics",
+   "year": 2015,
+   "citations": 114,
+   "doi": "10.1093/bioinformatics/btv020"
+  },
+  {
+   "name": "annotatr",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "annotatr: genomic regions in context",
+   "journal": "Bioinformatics",
+   "year": 2017,
+   "citations": 501,
+   "doi": "10.1093/bioinformatics/btx183"
+  },
+  {
+   "name": "eFORGE",
+   "functions": [
+    "enrich"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "eFORGE: A Tool for Identifying Cell Type-Specific Signal in Epigenomic Data",
+   "journal": "Cell Reports",
+   "year": 2016,
+   "citations": 132,
+   "doi": "10.1016/j.celrep.2016.10.059"
+  },
+  {
+   "name": "bacon",
+   "functions": [
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Controlling bias and inflation in epigenome- and transcriptome-wide association studies using the empirical null distribution",
+   "journal": "Genome Biology",
+   "year": 2017,
+   "citations": 424,
+   "doi": "10.1186/s13059-016-1131-9"
+  },
+  {
+   "name": "OSCA",
+   "functions": [
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "OSCA: a tool for omic-data-based complex trait analysis",
+   "journal": "Genome Biology",
+   "year": 2019,
+   "citations": 157,
+   "doi": "10.1186/s13059-019-1718-z"
+  },
+  {
+   "name": "GLINT",
+   "functions": [
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "GLINT: a user-friendly toolset for the analysis of high-throughput DNA-methylation array data",
+   "journal": "Bioinformatics",
+   "year": 2017,
+   "citations": 51,
+   "doi": "10.1093/bioinformatics/btx059"
+  },
+  {
+   "name": "CpGassoc",
+   "functions": [
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "CpGassoc: an R function for analysis of DNA methylation microarray data",
+   "journal": "Bioinformatics",
+   "year": 2012,
+   "citations": 226,
+   "doi": "10.1093/bioinformatics/bts124"
+  },
+  {
+   "name": "ReFACTor",
+   "functions": [
+    "ewas",
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Sparse PCA corrects for cell type heterogeneity in epigenome-wide association studies",
+   "journal": "Nature Methods",
+   "year": 2016,
+   "citations": 243,
+   "doi": "10.1038/nmeth.3809"
+  },
+  {
+   "name": "SmartSVA",
+   "functions": [
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Fast and robust adjustment of cell mixtures in epigenome-wide association studies with SmartSVA",
+   "journal": "BMC Genomics",
+   "year": 2017,
+   "citations": 78,
+   "doi": "10.1186/s12864-017-3808-1"
+  },
+  {
+   "name": "coMET",
+   "functions": [
+    "viz",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "coMET: visualisation of regional epigenome-wide association scan results and DNA co-methylation patterns",
+   "journal": "BMC Bioinformatics",
+   "year": 2015,
+   "citations": 115,
+   "doi": "10.1186/s12859-015-0568-2"
+  },
+  {
+   "name": "EWAS Atlas",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "EWAS Atlas: a curated knowledgebase of epigenome-wide association studies",
+   "journal": "Nucleic Acids Research",
+   "year": 2019,
+   "citations": 286,
+   "doi": "10.1093/nar/gky1027"
+  },
+  {
+   "name": "EWAS Catalog",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "The EWAS Catalog: a database of epigenome-wide association studies",
+   "journal": "Wellcome Open Research",
+   "year": 2022,
+   "citations": 221,
+   "doi": "10.12688/wellcomeopenres.17598.2"
+  },
+  {
+   "name": "EWAS Data Hub",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "EWAS Data Hub: a resource of DNA methylation array data and metadata",
+   "journal": "Nucleic Acids Research",
+   "year": 2020,
+   "citations": 108,
+   "doi": "10.1093/nar/gkz840"
+  },
+  {
+   "name": "GoDMC mQTL atlas",
+   "functions": [
+    "db",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Genomic and phenotypic insights from an atlas of genetic effects on DNA methylation",
+   "journal": "Nature Genetics",
+   "year": 2021,
+   "citations": 501,
+   "doi": "10.1038/s41588-021-00923-x"
+  },
+  {
+   "name": "MethBank",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "MethBank 4.0: an updated database of DNA methylation across a variety of species",
+   "journal": "Nucleic Acids Research",
+   "year": 2023,
+   "citations": 32,
+   "doi": "10.1093/nar/gkac969"
+  },
+  {
+   "name": "MethHC",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethHC 2.0: information repository of DNA methylation and gene expression in human cancer",
+   "journal": "Nucleic Acids Research",
+   "year": 2021,
+   "citations": 46,
+   "doi": "10.1093/nar/gkaa1104"
+  },
+  {
+   "name": "DiseaseMeth",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "DiseaseMeth version 3.0: a major expansion and update of the human disease methylation database",
+   "journal": "Nucleic Acids Research",
+   "year": 2022,
+   "citations": 27,
+   "doi": "10.1093/nar/gkab1088"
+  },
+  {
+   "name": "MethSurv",
+   "functions": [
+    "db",
+    "viz"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethSurv: A Web Tool to Perform Multivariable Survival Analysis Using DNA Methylation Data",
+   "journal": "Epigenomics",
+   "year": 2018,
+   "citations": 502,
+   "doi": "10.2217/epi-2017-0118"
+  },
+  {
+   "name": "MEXPRESS",
+   "functions": [
+    "viz",
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MEXPRESS update 2019",
+   "journal": "Nucleic Acids Research",
+   "year": 2019,
+   "citations": 213,
+   "doi": "10.1093/nar/gkz445"
+  },
+  {
+   "name": "SMART App",
+   "functions": [
+    "viz",
+    "db"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "The SMART App: an interactive web application for comprehensive DNA methylation analysis and visualization",
+   "journal": "Epigenetics & Chromatin",
+   "year": 2019,
+   "citations": 244,
+   "doi": "10.1186/s13072-019-0316-3"
+  },
+  {
+   "name": "MethMotif",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethMotif: an integrative cell specific database of transcription factor binding motifs coupled with DNA methylation profiles",
+   "journal": "Nucleic Acids Research",
+   "year": 2019,
+   "citations": 60,
+   "doi": "10.1093/nar/gky1005"
+  },
+  {
+   "name": "NGSmethDB",
+   "functions": [
+    "db"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "NGSmethDB 2017: enhanced methylomes and differential methylation",
+   "journal": "Nucleic Acids Research",
+   "year": 2017,
+   "citations": 19,
+   "doi": "10.1093/nar/gkw996"
+  },
+  {
+   "name": "Human methylation atlas (UXM)",
+   "functions": [
+    "db",
+    "cfdna",
+    "deconv"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "A DNA methylation atlas of normal human cell types",
+   "journal": "Nature",
+   "year": 2023,
+   "citations": 723,
+   "doi": "10.1038/s41586-022-05580-6"
+  },
+  {
+   "name": "Houseman method",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation arrays as surrogate measures of cell mixture distribution",
+   "journal": "BMC Bioinformatics",
+   "year": 2012,
+   "citations": 3075,
+   "doi": "10.1186/1471-2105-13-86"
+  },
+  {
+   "name": "EpiDISH",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A comparison of reference-based algorithms for correcting cell-type heterogeneity in Epigenome-Wide Association Studies",
+   "journal": "BMC Bioinformatics",
+   "year": 2017,
+   "citations": 542,
+   "doi": "10.1186/s12859-017-1511-5"
+  },
+  {
+   "name": "RefFreeEWAS",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Reference-free deconvolution of DNA methylation data and mediation by cell composition effects",
+   "journal": "BMC Bioinformatics",
+   "year": 2016,
+   "citations": 255,
+   "doi": "10.1186/s12859-016-1140-4"
+  },
+  {
+   "name": "MeDeCom",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "MeDeCom: discovery and quantification of latent components of heterogeneous methylomes",
+   "journal": "Genome Biology",
+   "year": 2017,
+   "citations": 98,
+   "doi": "10.1186/s13059-017-1182-6"
+  },
+  {
+   "name": "EDec",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Epigenomic Deconvolution of Breast Tumors Reveals Metabolic Coupling between Constituent Cell Types",
+   "journal": "Cell Reports",
+   "year": 2016,
+   "citations": 101,
+   "doi": "10.1016/j.celrep.2016.10.057"
+  },
+  {
+   "name": "MethylCIBERSORT",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Pan-cancer deconvolution of tumour composition using DNA methylation",
+   "journal": "Nature Communications",
+   "year": 2018,
+   "citations": 278,
+   "doi": "10.1038/s41467-018-05570-1"
+  },
+  {
+   "name": "MethylResolver",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethylResolver—a method for deconvoluting bulk DNA methylation profiles into known and unknown cell contents",
+   "journal": "Communications Biology",
+   "year": 2020,
+   "citations": 81,
+   "doi": "10.1038/s42003-020-01146-2"
+  },
+  {
+   "name": "FlowSorted.Blood.EPIC",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "An optimized library for reference-based deconvolution of whole-blood biospecimens assayed using the Illumina HumanMethylationEPIC BeadArray",
+   "journal": "Genome Biology",
+   "year": 2018,
+   "citations": 417,
+   "doi": "10.1186/s13059-018-1448-7"
+  },
+  {
+   "name": "IDOL",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Improving cell mixture deconvolution by identifying optimal DNA methylation libraries (IDOL)",
+   "journal": "BMC Bioinformatics",
+   "year": 2016,
+   "citations": 199,
+   "doi": "10.1186/s12859-016-0943-7"
+  },
+  {
+   "name": "TCA",
+   "functions": [
+    "deconv",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Cell-type-specific resolution epigenetics without the need for cell sorting or single-cell biology",
+   "journal": "Nature Communications",
+   "year": 2019,
+   "citations": 150,
+   "doi": "10.1038/s41467-019-11052-9"
+  },
+  {
+   "name": "CellDMC",
+   "functions": [
+    "deconv",
+    "dm",
+    "ewas"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Identification of differentially methylated cell types in epigenome-wide association studies",
+   "journal": "Nature Methods",
+   "year": 2018,
+   "citations": 325,
+   "doi": "10.1038/s41592-018-0213-x"
+  },
+  {
+   "name": "methylCC",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "methylCC: technology-independent estimation of cell type composition using differentially methylated regions",
+   "journal": "Genome Biology",
+   "year": 2019,
+   "citations": 29,
+   "doi": "10.1186/s13059-019-1827-8"
+  },
+  {
+   "name": "HiBED",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Hierarchical deconvolution for extensive cell type resolution in the human brain using DNA methylation",
+   "journal": "Frontiers in Neuroscience",
+   "year": 2023,
+   "citations": 19,
+   "doi": "10.3389/fnins.2023.1198243"
+  },
+  {
+   "name": "HiTIMED",
+   "functions": [
+    "deconv",
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "HiTIMED: hierarchical tumor immune microenvironment epigenetic deconvolution for accurate cell type resolution in the tumor microenvironment using tumor-type-specific DNA methylation data",
+   "journal": "Journal of Translational Medicine",
+   "year": 2022,
+   "citations": 42,
+   "doi": "10.1186/s12967-022-03736-6"
+  },
+  {
+   "name": "EPISCORE",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "EPISCORE: cell type deconvolution of bulk tissue DNA methylomes from single-cell RNA-Seq data",
+   "journal": "Genome Biology",
+   "year": 2020,
+   "citations": 121,
+   "doi": "10.1186/s13059-020-02126-9"
+  },
+  {
+   "name": "BayesCCE",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "BayesCCE: a Bayesian framework for estimating cell-type composition from DNA methylation without the need for methylation reference",
+   "journal": "Genome Biology",
+   "year": 2018,
+   "citations": 54,
+   "doi": "10.1186/s13059-018-1513-2"
+  },
+  {
+   "name": "ARIC",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "ARIC: accurate and robust inference of cell type proportions from bulk gene expression or DNA methylation data",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2022,
+   "citations": 19,
+   "doi": "10.1093/bib/bbab362"
+  },
+  {
+   "name": "EMeth",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "EMeth: An EM algorithm for cell type decomposition based on DNA methylation data",
+   "journal": "Scientific Reports",
+   "year": 2021,
+   "citations": 17,
+   "doi": "10.1038/s41598-021-84864-9"
+  },
+  {
+   "name": "PRISM",
+   "functions": [
+    "deconv",
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "PRISM: methylation pattern-based, reference-free inference of subclonal makeup",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 14,
+   "doi": "10.1093/bioinformatics/btz327"
+  },
+  {
+   "name": "scMD",
+   "functions": [
+    "deconv"
+   ],
+   "platforms": [
+    "array",
+    "bs",
+    "sc"
+   ],
+   "url": "",
+   "title": "scMD facilitates cell type deconvolution using single-cell DNA methylation references",
+   "journal": "Communications Biology",
+   "year": 2024,
+   "citations": 110,
+   "doi": "10.1038/s42003-023-05690-5"
+  },
+  {
+   "name": "Horvath clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation age of human tissues and cell types",
+   "journal": "Genome Biology",
+   "year": 2013,
+   "citations": 6877,
+   "doi": "10.1186/gb-2013-14-10-r115"
+  },
+  {
+   "name": "Hannum clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Genome-wide Methylation Profiles Reveal Quantitative Views of Human Aging Rates",
+   "journal": "Molecular Cell",
+   "year": 2013,
+   "citations": 4300,
+   "doi": "10.1016/j.molcel.2012.10.016"
+  },
+  {
+   "name": "PhenoAge",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "An epigenetic biomarker of aging for lifespan and healthspan",
+   "journal": "Aging",
+   "year": 2018,
+   "citations": 3679,
+   "doi": "10.18632/aging.101414"
+  },
+  {
+   "name": "GrimAge",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation GrimAge strongly predicts lifespan and healthspan",
+   "journal": "Aging",
+   "year": 2019,
+   "citations": 2513,
+   "doi": "10.18632/aging.101684"
+  },
+  {
+   "name": "GrimAge2",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation GrimAge version 2",
+   "journal": "Aging",
+   "year": 2022,
+   "citations": 217,
+   "doi": "10.18632/aging.204434"
+  },
+  {
+   "name": "DunedinPACE",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DunedinPACE, a DNA methylation biomarker of the pace of aging",
+   "journal": "eLife",
+   "year": 2022,
+   "citations": 1206,
+   "doi": "10.7554/elife.73420"
+  },
+  {
+   "name": "Skin & Blood clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies",
+   "journal": "Aging",
+   "year": 2018,
+   "citations": 830,
+   "doi": "10.18632/aging.101508"
+  },
+  {
+   "name": "Zhang clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Improved precision of epigenetic clock estimates across tissues and its implication for biological ageing",
+   "journal": "Genome Medicine",
+   "year": 2019,
+   "citations": 489,
+   "doi": "10.1186/s13073-019-0667-1"
+  },
+  {
+   "name": "epiTOC",
+   "functions": [
+    "clock",
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Correlation of an epigenetic mitotic clock with cancer risk",
+   "journal": "Genome Biology",
+   "year": 2016,
+   "citations": 331,
+   "doi": "10.1186/s13059-016-1064-3"
+  },
+  {
+   "name": "epiTOC2",
+   "functions": [
+    "clock",
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A comparison of epigenetic mitotic-like clocks for cancer risk prediction",
+   "journal": "Genome Medicine",
+   "year": 2020,
+   "citations": 163,
+   "doi": "10.1186/s13073-020-00752-3"
+  },
+  {
+   "name": "methylclock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "methylclock : a Bioconductor package to estimate DNA methylation age",
+   "journal": "Bioinformatics",
+   "year": 2021,
+   "citations": 236,
+   "doi": "10.1093/bioinformatics/btaa825"
+  },
+  {
+   "name": "PC clocks",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking",
+   "journal": "Nature Aging",
+   "year": 2022,
+   "citations": 512,
+   "doi": "10.1038/s43587-022-00248-2"
+  },
+  {
+   "name": "Universal mammalian clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Universal DNA methylation age across mammalian tissues",
+   "journal": "Nature Aging",
+   "year": 2023,
+   "citations": 416,
+   "doi": "10.1038/s43587-023-00462-6"
+  },
+  {
+   "name": "AltumAge",
+   "functions": [
+    "clock",
+    "dl"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A pan-tissue DNA-methylation epigenetic clock based on deep learning",
+   "journal": "npj Aging",
+   "year": 2022,
+   "citations": 152,
+   "doi": "10.1038/s41514-022-00085-y"
+  },
+  {
+   "name": "pyaging",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "pyaging : a Python-based compendium of GPU-optimized aging clocks",
+   "journal": "Bioinformatics",
+   "year": 2024,
+   "citations": 31,
+   "doi": "10.1093/bioinformatics/btae200"
+  },
+  {
+   "name": "Biolearn",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "A unified framework for systematic curation and evaluation of aging biomarkers",
+   "journal": "Nature Aging",
+   "year": 2025,
+   "citations": 36,
+   "doi": "10.1038/s43587-025-00987-y"
+  },
+  {
+   "name": "scAge",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Profiling epigenetic age in single cells",
+   "journal": "Nature Aging",
+   "year": 2021,
+   "citations": 143,
+   "doi": "10.1038/s43587-021-00134-3"
+  },
+  {
+   "name": "DNAmTL",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation-based estimator of telomere length",
+   "journal": "Aging",
+   "year": 2019,
+   "citations": 406,
+   "doi": "10.18632/aging.102173"
+  },
+  {
+   "name": "PedBE clock",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "The PedBE clock accurately estimates DNA methylation age in pediatric buccal cells",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2020,
+   "citations": 282,
+   "doi": "10.1073/pnas.1820843116"
+  },
+  {
+   "name": "Causal clocks (DamAge/AdaptAge)",
+   "functions": [
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Causality-enriched epigenetic age uncouples damage and adaptation",
+   "journal": "Nature Aging",
+   "year": 2024,
+   "citations": 230,
+   "doi": "10.1038/s43587-023-00557-0"
+  },
+  {
+   "name": "MNP brain tumour classifier",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "DNA methylation-based classification of central nervous system tumours",
+   "journal": "Nature",
+   "year": 2018,
+   "citations": 2898,
+   "doi": "10.1038/nature26000"
+  },
+  {
+   "name": "Sarcoma classifier",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Sarcoma classification by DNA methylation profiling",
+   "journal": "Nature Communications",
+   "year": 2021,
+   "citations": 524,
+   "doi": "10.1038/s41467-020-20603-4"
+  },
+  {
+   "name": "EPICUP",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Epigenetic profiling to classify cancer of unknown primary: a multicentre, retrospective analysis",
+   "journal": "The Lancet Oncology",
+   "year": 2016,
+   "citations": 473,
+   "doi": "10.1016/s1470-2045(16)30297-2"
+  },
+  {
+   "name": "Sturgeon",
+   "functions": [
+    "cancer",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Ultra-fast deep-learned CNS tumour classification during surgery",
+   "journal": "Nature",
+   "year": 2023,
+   "citations": 229,
+   "doi": "10.1038/s41586-023-06615-2"
+  },
+  {
+   "name": "nanoDx",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Robust methylation‐based classification of brain tumours using nanopore sequencing",
+   "journal": "Neuropathology and Applied Neurobiology",
+   "year": 2023,
+   "citations": 78,
+   "doi": "10.1111/nan.12856"
+  },
+  {
+   "name": "NanoDx (same-day diagnosis)",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Same-day genomic and epigenomic diagnosis of brain tumors using real-time nanopore sequencing",
+   "journal": "Acta Neuropathologica",
+   "year": 2017,
+   "citations": 198,
+   "doi": "10.1007/s00401-017-1743-5"
+  },
+  {
+   "name": "Rapid-CNS2",
+   "functions": [
+    "cancer",
+    "pipe"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Rapid-CNS2: rapid comprehensive adaptive nanopore-sequencing of CNS tumors, a proof-of-concept study",
+   "journal": "Acta Neuropathologica",
+   "year": 2022,
+   "citations": 78,
+   "doi": "10.1007/s00401-022-02415-6"
+  },
+  {
+   "name": "crossNN",
+   "functions": [
+    "cancer",
+    "dl"
+   ],
+   "platforms": [
+    "ont",
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "crossNN is an explainable framework for cross-platform DNA methylation-based classification of tumors",
+   "journal": "Nature Cancer",
+   "year": 2025,
+   "citations": 34,
+   "doi": "10.1038/s43018-025-00976-5"
+  },
+  {
+   "name": "MethyLYZR",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Rapid brain tumor classification from sparse epigenomic data",
+   "journal": "Nature Medicine",
+   "year": 2025,
+   "citations": 49,
+   "doi": "10.1038/s41591-024-03435-3"
+  },
+  {
+   "name": "ML workflows for methylation classifiers (Maros)",
+   "functions": [
+    "cancer"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Machine learning workflows to estimate class probabilities for precision cancer diagnostics on DNA methylation microarray data",
+   "journal": "Nature Protocols",
+   "year": 2020,
+   "citations": 118,
+   "doi": "10.1038/s41596-019-0251-6"
+  },
+  {
+   "name": "mepylome",
+   "functions": [
+    "cancer",
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Mepylome: A Point‐of‐Care Tumor Diagnostic Toolkit for Tumor DNA Methylation and Copy Number Analysis",
+   "journal": "Advanced Intelligent Systems",
+   "year": 2026,
+   "citations": 4,
+   "doi": "10.1002/aisy.202500778"
+  },
+  {
+   "name": "MethylBERT",
+   "functions": [
+    "cancer",
+    "dl",
+    "deconv"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "MethylBERT enables read-level DNA methylation pattern identification and tumour deconvolution using a Transformer-based model",
+   "journal": "Nature Communications",
+   "year": 2025,
+   "citations": 21,
+   "doi": "10.1038/s41467-025-55920-z"
+  },
+  {
+   "name": "MethylNet",
+   "functions": [
+    "dl"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethylNet: an automated and modular deep learning approach for DNA methylation analysis",
+   "journal": "BMC Bioinformatics",
+   "year": 2020,
+   "citations": 125,
+   "doi": "10.1186/s12859-020-3443-8"
+  },
+  {
+   "name": "MethScope",
+   "functions": [
+    "sc",
+    "cancer",
+    "deconv"
+   ],
+   "platforms": [
+    "sc",
+    "spatial",
+    "bs"
+   ],
+   "url": "",
+   "title": "MethScope: Ultra-Fast Analysis of Sparse DNA Methylome via Recurrent Pattern Encoding",
+   "journal": "CRAN: Contributed Packages",
+   "year": 2025,
+   "citations": 0,
+   "doi": "10.32614/cran.package.methscope"
+  },
+  {
+   "name": "InfiniumPurify",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Estimating and accounting for tumor purity in the analysis of DNA methylation data from cancer studies",
+   "journal": "Genome Biology",
+   "year": 2017,
+   "citations": 121,
+   "doi": "10.1186/s13059-016-1143-5"
+  },
+  {
+   "name": "MethylPurify",
+   "functions": [
+    "purity",
+    "dm"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethylPurify: tumor purity deconvolution and differential methylation detection from single tumor DNA methylomes",
+   "journal": "Genome Biology",
+   "year": 2014,
+   "citations": 89,
+   "doi": "10.1186/s13059-014-0419-x"
+  },
+  {
+   "name": "PAMES",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Tumor purity quantification by clonal DNA methylation signatures",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 44,
+   "doi": "10.1093/bioinformatics/bty011"
+  },
+  {
+   "name": "RF_Purify",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "RF_Purify: a novel tool for comprehensive analysis of tumor-purity in methylation array data based on random forest regression",
+   "journal": "BMC Bioinformatics",
+   "year": 2019,
+   "citations": 57,
+   "doi": "10.1186/s12859-019-3014-z"
+  },
+  {
+   "name": "LUMP",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Systematic pan-cancer analysis of tumour purity",
+   "journal": "Nature Communications",
+   "year": 2015,
+   "citations": 1167,
+   "doi": "10.1038/ncomms9971"
+  },
+  {
+   "name": "conumee 2.0",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Conumee 2.0: enhanced copy-number variation analysis from DNA methylation arrays for humans and mice",
+   "journal": "Bioinformatics",
+   "year": 2024,
+   "citations": 106,
+   "doi": "10.1093/bioinformatics/btae029"
+  },
+  {
+   "name": "cnAnalysis450k",
+   "functions": [
+    "purity"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "cnAnalysis450k: an R package for comparative analysis of 450k/EPIC Illumina methylation array derived copy number data",
+   "journal": "Bioinformatics",
+   "year": 2017,
+   "citations": 14,
+   "doi": "10.1093/bioinformatics/btx156"
+  },
+  {
+   "name": "meth_atlas",
+   "functions": [
+    "cfdna",
+    "deconv"
+   ],
+   "platforms": [
+    "array",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Comprehensive human cell-type methylation atlas reveals origins of circulating cell-free DNA in health and disease",
+   "journal": "Nature Communications",
+   "year": 2018,
+   "citations": 1025,
+   "doi": "10.1038/s41467-018-07466-6"
+  },
+  {
+   "name": "wgbstools",
+   "functions": [
+    "util",
+    "viz",
+    "het"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "wgbstools : a computational suite for DNA methylation sequencing data analysis",
+   "journal": "Life Science Alliance",
+   "year": 2026,
+   "citations": 11,
+   "doi": "10.26508/lsa.202503514"
+  },
+  {
+   "name": "CelFiE",
+   "functions": [
+    "cfdna",
+    "deconv"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Comprehensive cell type decomposition of circulating cell-free DNA with CelFiE",
+   "journal": "Nature Communications",
+   "year": 2021,
+   "citations": 84,
+   "doi": "10.1038/s41467-021-22901-x"
+  },
+  {
+   "name": "CelFEER",
+   "functions": [
+    "cfdna",
+    "deconv"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Cell type deconvolution of methylated cell-free DNA at the resolution of individual reads",
+   "journal": "NAR Genomics and Bioinformatics",
+   "year": 2023,
+   "citations": 23,
+   "doi": "10.1093/nargab/lqad048"
+  },
+  {
+   "name": "CancerLocator",
+   "functions": [
+    "cfdna",
+    "cancer"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "CancerLocator: non-invasive cancer diagnosis and tissue-of-origin prediction using methylation profiles of cell-free DNA",
+   "journal": "Genome Biology",
+   "year": 2017,
+   "citations": 249,
+   "doi": "10.1186/s13059-017-1191-5"
+  },
+  {
+   "name": "CancerDetector",
+   "functions": [
+    "cfdna",
+    "cancer"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "CancerDetector: ultrasensitive and non-invasive cancer detection at the resolution of individual reads using cell-free DNA methylation sequencing data",
+   "journal": "Nucleic Acids Research",
+   "year": 2018,
+   "citations": 193,
+   "doi": "10.1093/nar/gky423"
+  },
+  {
+   "name": "DISMIR",
+   "functions": [
+    "cfdna",
+    "cancer",
+    "dl"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "DISMIR: D eep learning-based noninvasive cancer detection by i ntegrating DNA s equence and methylation information of i ndividual cell-free DNA r eads",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2021,
+   "citations": 62,
+   "doi": "10.1093/bib/bbab250"
+  },
+  {
+   "name": "Plasma DNA tissue mapping",
+   "functions": [
+    "cfdna",
+    "deconv"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Plasma DNA tissue mapping by genome-wide methylation sequencing for noninvasive prenatal, cancer, and transplantation assessments",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2015,
+   "citations": 712,
+   "doi": "10.1073/pnas.1508736112"
+  },
+  {
+   "name": "cfMeDIP-seq classifier",
+   "functions": [
+    "cfdna",
+    "cancer"
+   ],
+   "platforms": [
+    "enrich",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Sensitive tumour detection and classification using plasma cell-free DNA methylomes",
+   "journal": "Nature",
+   "year": 2018,
+   "citations": 910,
+   "doi": "10.1038/s41586-018-0703-0"
+  },
+  {
+   "name": "MONOD2 (methylation haplotype blocks)",
+   "functions": [
+    "cfdna",
+    "het"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Identification of methylation haplotype blocks aids in deconvolution of heterogeneous tissue samples and tumor tissue-of-origin mapping from plasma DNA",
+   "journal": "Nature Genetics",
+   "year": 2017,
+   "citations": 517,
+   "doi": "10.1038/ng.3805"
+  },
+  {
+   "name": "cfSort",
+   "functions": [
+    "cfdna",
+    "deconv",
+    "dl"
+   ],
+   "platforms": [
+    "bs",
+    "cfdna"
+   ],
+   "url": "",
+   "title": "Comprehensive tissue deconvolution of cell-free DNA by deep learning for disease diagnosis and monitoring",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2023,
+   "citations": 72,
+   "doi": "10.1073/pnas.2305236120"
+  },
+  {
+   "name": "methclone",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Dynamic evolution of clonal epialleles revealed by methclone",
+   "journal": "Genome Biology",
+   "year": 2014,
+   "citations": 64,
+   "doi": "10.1186/s13059-014-0472-5"
+  },
+  {
+   "name": "Epipolymorphism",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Epigenetic polymorphism and the stochastic formation of differentially methylated regions in normal and cancerous tissues",
+   "journal": "Nature Genetics",
+   "year": 2012,
+   "citations": 293,
+   "doi": "10.1038/ng.2442"
+  },
+  {
+   "name": "PDR (proportion of discordant reads)",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Locally Disordered Methylation Forms the Basis of Intratumor Methylome Variation in Chronic Lymphocytic Leukemia",
+   "journal": "Cancer Cell",
+   "year": 2014,
+   "citations": 393,
+   "doi": "10.1016/j.ccell.2014.10.012"
+  },
+  {
+   "name": "informME",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Potential energy landscapes identify the information-theoretic nature of the epigenome",
+   "journal": "Nature Genetics",
+   "year": 2017,
+   "citations": 156,
+   "doi": "10.1038/ng.3811"
+  },
+  {
+   "name": "Metheor",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Metheor: Ultrafast DNA methylation heterogeneity calculation from bisulfite read alignments",
+   "journal": "PLOS Computational Biology",
+   "year": 2023,
+   "citations": 14,
+   "doi": "10.1371/journal.pcbi.1010946"
+  },
+  {
+   "name": "CluBCpG",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Identification of cell type-specific methylation signals in bulk whole genome bisulfite sequencing data",
+   "journal": "Genome Biology",
+   "year": 2020,
+   "citations": 34,
+   "doi": "10.1186/s13059-020-02065-5"
+  },
+  {
+   "name": "DAMEfinder",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "DAMEfinder: a method to detect differential allele-specific methylation",
+   "journal": "Epigenetics & Chromatin",
+   "year": 2020,
+   "citations": 19,
+   "doi": "10.1186/s13072-020-00346-8"
+  },
+  {
+   "name": "MethHaplo",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MethHaplo: combining allele-specific DNA methylation and SNPs for haplotype region identification",
+   "journal": "BMC Bioinformatics",
+   "year": 2020,
+   "citations": 12,
+   "doi": "10.1186/s12859-020-03798-7"
+  },
+  {
+   "name": "amrfinder",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Genomic landscape of human allele-specific DNA methylation",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2012,
+   "citations": 110,
+   "doi": "10.1073/pnas.1201310109"
+  },
+  {
+   "name": "mHapTk",
+   "functions": [
+    "het",
+    "util"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "mHapTk: a comprehensive toolkit for the analysis of DNA methylation haplotypes",
+   "journal": "Bioinformatics",
+   "year": 2022,
+   "citations": 16,
+   "doi": "10.1093/bioinformatics/btac650"
+  },
+  {
+   "name": "DMEAS",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "DMEAS: DNA methylation entropy analysis software",
+   "journal": "Bioinformatics",
+   "year": 2013,
+   "citations": 22,
+   "doi": "10.1093/bioinformatics/btt332"
+  },
+  {
+   "name": "MethylSeekR",
+   "functions": [
+    "seg"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "Identification of active regulatory regions from DNA methylation data",
+   "journal": "Nucleic Acids Research",
+   "year": 2013,
+   "citations": 237,
+   "doi": "10.1093/nar/gkt599"
+  },
+  {
+   "name": "MEDIPS",
+   "functions": [
+    "dm",
+    "qc"
+   ],
+   "platforms": [
+    "enrich"
+   ],
+   "url": "",
+   "title": "MEDIPS: genome-wide differential coverage analysis of sequencing data derived from DNA enrichment experiments",
+   "journal": "Bioinformatics",
+   "year": 2014,
+   "citations": 309,
+   "doi": "10.1093/bioinformatics/btt650"
+  },
+  {
+   "name": "QSEA",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "enrich"
+   ],
+   "url": "",
+   "title": "QSEA—modelling of genome-wide DNA methylation from sequencing enrichment experiments",
+   "journal": "Nucleic Acids Research",
+   "year": 2017,
+   "citations": 55,
+   "doi": "10.1093/nar/gkw1193"
+  },
+  {
+   "name": "methylCRF",
+   "functions": [
+    "impute"
+   ],
+   "platforms": [
+    "enrich"
+   ],
+   "url": "",
+   "title": "Estimating absolute methylation levels at single-CpG resolution from methylation enrichment and restriction enzyme sequencing methods",
+   "journal": "Genome Research",
+   "year": 2013,
+   "citations": 145,
+   "doi": "10.1101/gr.152231.112"
+  },
+  {
+   "name": "Batman",
+   "functions": [
+    "qc"
+   ],
+   "platforms": [
+    "enrich"
+   ],
+   "url": "",
+   "title": "A Bayesian deconvolution strategy for immunoprecipitation-based DNA methylome analysis",
+   "journal": "Nature Biotechnology",
+   "year": 2008,
+   "citations": 557,
+   "doi": "10.1038/nbt1414"
+  },
+  {
+   "name": "MeDUSA",
+   "functions": [
+    "pipe"
+   ],
+   "platforms": [
+    "enrich"
+   ],
+   "url": "",
+   "title": "Resources for methylome analysis suitable for gene knockout studies of potential epigenome modifiers",
+   "journal": "GigaScience",
+   "year": 2012,
+   "citations": 43,
+   "doi": "10.1186/2047-217x-1-3"
+  },
+  {
+   "name": "MLML",
+   "functions": [
+    "hmc"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "MLML: consistent simultaneous estimates of DNA methylation and hydroxymethylation",
+   "journal": "Bioinformatics",
+   "year": 2013,
+   "citations": 50,
+   "doi": "10.1093/bioinformatics/btt459"
+  },
+  {
+   "name": "OxyBS",
+   "functions": [
+    "hmc"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "OxyBS: estimation of 5-methylcytosine and 5-hydroxymethylcytosine from tandem-treated oxidative bisulfite and bisulfite DNA",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 36,
+   "doi": "10.1093/bioinformatics/btw158"
+  },
+  {
+   "name": "oxBS-MLE",
+   "functions": [
+    "hmc"
+   ],
+   "platforms": [
+    "array",
+    "bs"
+   ],
+   "url": "",
+   "title": "oxBS-MLE: an efficient method to estimate 5-methylcytosine and 5-hydroxymethylcytosine in paired bisulfite and oxidative bisulfite treated DNA",
+   "journal": "Bioinformatics",
+   "year": 2016,
+   "citations": 33,
+   "doi": "10.1093/bioinformatics/btw527"
+  },
+  {
+   "name": "Nanopolish",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Detecting DNA cytosine methylation using nanopore sequencing",
+   "journal": "Nature Methods",
+   "year": 2017,
+   "citations": 1197,
+   "doi": "10.1038/nmeth.4184"
+  },
+  {
+   "name": "DeepSignal",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "DeepSignal: detecting DNA methylation state from Nanopore sequencing reads using deep-learning",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 241,
+   "doi": "10.1093/bioinformatics/btz276"
+  },
+  {
+   "name": "DeepSignal-plant",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Genome-wide detection of cytosine methylations in plant from Nanopore data using deep learning",
+   "journal": "Nature Communications",
+   "year": 2021,
+   "citations": 108,
+   "doi": "10.1038/s41467-021-26278-9"
+  },
+  {
+   "name": "DeepMod",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Detection of DNA base modifications by deep recurrent neural network on Oxford Nanopore sequencing data",
+   "journal": "Nature Communications",
+   "year": 2019,
+   "citations": 297,
+   "doi": "10.1038/s41467-019-10168-2"
+  },
+  {
+   "name": "DeepMod2",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "A signal processing and deep learning framework for methylation detection using Oxford Nanopore sequencing",
+   "journal": "Nature Communications",
+   "year": 2024,
+   "citations": 127,
+   "doi": "10.1038/s41467-024-45778-y"
+  },
+  {
+   "name": "signalAlign",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Mapping DNA methylation with high-throughput nanopore sequencing",
+   "journal": "Nature Methods",
+   "year": 2017,
+   "citations": 519,
+   "doi": "10.1038/nmeth.4189"
+  },
+  {
+   "name": "Tombo",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing",
+   "journal": "bioRxiv (preprint)",
+   "year": 2016,
+   "citations": 287,
+   "doi": "10.1101/094672"
+  },
+  {
+   "name": "f5c",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis",
+   "journal": "BMC Bioinformatics",
+   "year": 2020,
+   "citations": 132,
+   "doi": "10.1186/s12859-020-03697-x"
+  },
+  {
+   "name": "Dorado",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "https://github.com/nanoporetech/dorado",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "Megalodon",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "https://github.com/nanoporetech/megalodon",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "modkit",
+   "functions": [
+    "util"
+   ],
+   "platforms": [
+    "ont",
+    "pacbio"
+   ],
+   "url": "https://github.com/nanoporetech/modkit",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "METEORE",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Systematic benchmarking of tools for CpG methylation detection from nanopore sequencing",
+   "journal": "Nature Communications",
+   "year": 2021,
+   "citations": 175,
+   "doi": "10.1038/s41467-021-23778-6"
+  },
+  {
+   "name": "Rockfish",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Rockfish: A transformer-based model for accurate 5-methylcytosine prediction from nanopore sequencing",
+   "journal": "Nature Communications",
+   "year": 2024,
+   "citations": 36,
+   "doi": "10.1038/s41467-024-49847-0"
+  },
+  {
+   "name": "DeepBAM",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "DeepBAM: a high-accuracy single-molecule CpG methylation detection tool for Oxford nanopore sequencing",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2024,
+   "citations": 14,
+   "doi": "10.1093/bib/bbae413"
+  },
+  {
+   "name": "Uncalled4",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Uncalled4 improves nanopore DNA and RNA modification detection via fast and accurate signal alignment",
+   "journal": "Nature Methods",
+   "year": 2025,
+   "citations": 66,
+   "doi": "10.1038/s41592-025-02631-4"
+  },
+  {
+   "name": "mCaller",
+   "functions": [
+    "modcall",
+    "hmc"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Single-molecule sequencing detection of N6-methyladenine in microbial reference materials",
+   "journal": "Nature Communications",
+   "year": 2019,
+   "citations": 168,
+   "doi": "10.1038/s41467-019-08289-9"
+  },
+  {
+   "name": "nanodisco",
+   "functions": [
+    "modcall",
+    "hmc"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Discovering multiple types of DNA methylation from bacteria and microbiome using nanopore sequencing",
+   "journal": "Nature Methods",
+   "year": 2021,
+   "citations": 208,
+   "doi": "10.1038/s41592-021-01109-3"
+  },
+  {
+   "name": "NanoMethPhase",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "Megabase-scale methylation phasing using nanopore long reads and NanoMethPhase",
+   "journal": "Genome Biology",
+   "year": 2021,
+   "citations": 82,
+   "doi": "10.1186/s13059-021-02283-5"
+  },
+  {
+   "name": "MethPhaser",
+   "functions": [
+    "het"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "MethPhaser: methylation-based long-read haplotype phasing of human genomes",
+   "journal": "Nature Communications",
+   "year": 2024,
+   "citations": 30,
+   "doi": "10.1038/s41467-024-49588-0"
+  },
+  {
+   "name": "Methylartist",
+   "functions": [
+    "viz"
+   ],
+   "platforms": [
+    "ont",
+    "pacbio"
+   ],
+   "url": "",
+   "title": "Methylartist: tools for visualizing modified bases from nanopore sequence data",
+   "journal": "Bioinformatics",
+   "year": 2022,
+   "citations": 91,
+   "doi": "10.1093/bioinformatics/btac292"
+  },
+  {
+   "name": "NanoMethViz",
+   "functions": [
+    "viz"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "NanoMethViz: An R/Bioconductor package for visualizing long-read methylation data",
+   "journal": "PLOS Computational Biology",
+   "year": 2021,
+   "citations": 27,
+   "doi": "10.1371/journal.pcbi.1009524"
+  },
+  {
+   "name": "modbamtools",
+   "functions": [
+    "viz",
+    "util"
+   ],
+   "platforms": [
+    "ont",
+    "pacbio"
+   ],
+   "url": "",
+   "title": "Modbamtools: Analysis of single-molecule epigenetic data for long-range profiling, heterogeneity, and clustering",
+   "journal": "bioRxiv (preprint)",
+   "year": 2022,
+   "citations": 25,
+   "doi": "10.1101/2022.07.07.499188"
+  },
+  {
+   "name": "pycoMeth",
+   "functions": [
+    "dm"
+   ],
+   "platforms": [
+    "ont"
+   ],
+   "url": "",
+   "title": "pycoMeth: a toolbox for differential methylation testing from Nanopore methylation calls",
+   "journal": "Genome Biology",
+   "year": 2023,
+   "citations": 14,
+   "doi": "10.1186/s13059-023-02917-w"
+  },
+  {
+   "name": "ccsmeth",
+   "functions": [
+    "modcall",
+    "dl",
+    "het"
+   ],
+   "platforms": [
+    "pacbio"
+   ],
+   "url": "",
+   "title": "DNA 5-methylcytosine detection and methylation phasing using PacBio circular consensus sequencing",
+   "journal": "Nature Communications",
+   "year": 2023,
+   "citations": 110,
+   "doi": "10.1038/s41467-023-39784-9"
+  },
+  {
+   "name": "SMRT kinetics (original)",
+   "functions": [
+    "modcall"
+   ],
+   "platforms": [
+    "pacbio"
+   ],
+   "url": "",
+   "title": "Direct detection of DNA methylation during single-molecule, real-time sequencing",
+   "journal": "Nature Methods",
+   "year": 2010,
+   "citations": 1401,
+   "doi": "10.1038/nmeth.1459"
+  },
+  {
+   "name": "HK model",
+   "functions": [
+    "modcall",
+    "dl"
+   ],
+   "platforms": [
+    "pacbio"
+   ],
+   "url": "",
+   "title": "Genome-wide detection of cytosine methylation by single molecule real-time sequencing",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2021,
+   "citations": 126,
+   "doi": "10.1073/pnas.2019768118"
+  },
+  {
+   "name": "fibertools",
+   "functions": [
+    "modcall",
+    "hmc"
+   ],
+   "platforms": [
+    "pacbio",
+    "ont"
+   ],
+   "url": "",
+   "title": "DNA-m6A calling and integrated long-read epigenetic and genetic analysis with fibertools",
+   "journal": "Genome Research",
+   "year": 2024,
+   "citations": 63,
+   "doi": "10.1101/gr.279095.124"
+  },
+  {
+   "name": "pb-CpG-tools",
+   "functions": [
+    "util"
+   ],
+   "platforms": [
+    "pacbio"
+   ],
+   "url": "https://github.com/PacificBiosciences/pb-CpG-tools",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "MethSCAn",
+   "functions": [
+    "sc",
+    "dm"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Analyzing single-cell bisulfite sequencing data with MethSCAn",
+   "journal": "Nature Methods",
+   "year": 2024,
+   "citations": 32,
+   "doi": "10.1038/s41592-024-02347-x"
+  },
+  {
+   "name": "Melissa",
+   "functions": [
+    "sc",
+    "impute"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Melissa: Bayesian clustering and imputation of single-cell methylomes",
+   "journal": "Genome Biology",
+   "year": 2019,
+   "citations": 66,
+   "doi": "10.1186/s13059-019-1665-8"
+  },
+  {
+   "name": "DeepCpG",
+   "functions": [
+    "impute",
+    "dl"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "DeepCpG: accurate prediction of single-cell DNA methylation states using deep learning",
+   "journal": "Genome Biology",
+   "year": 2017,
+   "citations": 443,
+   "doi": "10.1186/s13059-017-1189-z"
+  },
+  {
+   "name": "EpiScanpy",
+   "functions": [
+    "sc"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "EpiScanpy: integrated single-cell epigenomic analysis",
+   "journal": "Nature Communications",
+   "year": 2021,
+   "citations": 138,
+   "doi": "10.1038/s41467-021-25131-3"
+  },
+  {
+   "name": "ALLCools",
+   "functions": [
+    "sc",
+    "dm"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "DNA methylation atlas of the mouse brain at single-cell resolution",
+   "journal": "Nature",
+   "year": 2021,
+   "citations": 318,
+   "doi": "10.1038/s41586-020-03182-8"
+  },
+  {
+   "name": "scMET",
+   "functions": [
+    "sc",
+    "dm"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "scMET: Bayesian modeling of DNA methylation heterogeneity at single-cell resolution",
+   "journal": "Genome Biology",
+   "year": 2021,
+   "citations": 30,
+   "doi": "10.1186/s13059-021-02329-8"
+  },
+  {
+   "name": "Epiclomal",
+   "functions": [
+    "sc"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Epiclomal: Probabilistic clustering of sparse single-cell DNA methylation data",
+   "journal": "PLOS Computational Biology",
+   "year": 2020,
+   "citations": 28,
+   "doi": "10.1371/journal.pcbi.1008270"
+  },
+  {
+   "name": "MOFA+",
+   "functions": [
+    "integ"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "MOFA+: a statistical framework for comprehensive integration of multi-modal single-cell data",
+   "journal": "Genome Biology",
+   "year": 2020,
+   "citations": 1195,
+   "doi": "10.1186/s13059-020-02015-1"
+  },
+  {
+   "name": "BPRMeth",
+   "functions": [
+    "sc",
+    "impute"
+   ],
+   "platforms": [
+    "sc",
+    "bs"
+   ],
+   "url": "",
+   "title": "BPRMeth: a flexible Bioconductor package for modelling methylation profiles",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 16,
+   "doi": "10.1093/bioinformatics/bty129"
+  },
+  {
+   "name": "CaMelia",
+   "functions": [
+    "impute"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "CaMelia: imputation in single-cell methylomes based on local similarities between cells",
+   "journal": "Bioinformatics",
+   "year": 2021,
+   "citations": 14,
+   "doi": "10.1093/bioinformatics/btab029"
+  },
+  {
+   "name": "PDclust",
+   "functions": [
+    "sc"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "High-Resolution Single-Cell DNA Methylation Measurements Reveal Epigenetically Distinct Hematopoietic Stem Cell Subpopulations",
+   "journal": "Stem Cell Reports",
+   "year": 2018,
+   "citations": 98,
+   "doi": "10.1016/j.stemcr.2018.07.003"
+  },
+  {
+   "name": "Amethyst",
+   "functions": [
+    "sc",
+    "dm"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Single-cell DNA methylation analysis tool Amethyst resolves distinct non-CG methylation patterns in human astrocytes and oligodendrocytes",
+   "journal": "Communications Biology",
+   "year": 2025,
+   "citations": 1,
+   "doi": "10.1038/s42003-025-08859-2"
+  },
+  {
+   "name": "vmrseq",
+   "functions": [
+    "sc",
+    "dm"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "vmrseq: probabilistic modeling of single-cell methylation heterogeneity",
+   "journal": "Genome Biology",
+   "year": 2024,
+   "citations": 3,
+   "doi": "10.1186/s13059-024-03457-7"
+  },
+  {
+   "name": "SINBAD",
+   "functions": [
+    "sc",
+    "pipe"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "SINBAD: a flexible tool for single cell DNA methylation data",
+   "journal": "bioRxiv (preprint)",
+   "year": 2021,
+   "citations": 4,
+   "doi": "10.1101/2021.10.23.465577"
+  },
+  {
+   "name": "LIGER",
+   "functions": [
+    "integ"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Single-Cell Multi-omic Integration Compares and Contrasts Features of Brain Cell Identity",
+   "journal": "Cell",
+   "year": 2019,
+   "citations": 1334,
+   "doi": "10.1016/j.cell.2019.05.006"
+  },
+  {
+   "name": "MAPLE",
+   "functions": [
+    "integ"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Predictive modeling of single-cell DNA methylome data enhances integration with transcriptome data",
+   "journal": "Genome Research",
+   "year": 2021,
+   "citations": 18,
+   "doi": "10.1101/gr.267047.120"
+  },
+  {
+   "name": "scAI",
+   "functions": [
+    "integ"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "scAI: an unsupervised approach for the integrative analysis of parallel single-cell transcriptomic and epigenomic profiles",
+   "journal": "Genome Biology",
+   "year": 2020,
+   "citations": 176,
+   "doi": "10.1186/s13059-020-1932-8"
+  },
+  {
+   "name": "GLUE",
+   "functions": [
+    "integ",
+    "dl"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "Multi-omics single-cell data integration and regulatory inference with graph-linked embedding",
+   "journal": "Nature Biotechnology",
+   "year": 2022,
+   "citations": 661,
+   "doi": "10.1038/s41587-022-01284-4"
+  },
+  {
+   "name": "scMelody",
+   "functions": [
+    "sc"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "",
+   "title": "scMelody: An Enhanced Consensus-Based Clustering Model for Single-Cell Methylation Data by Reconstructing Cell-to-Cell Similarity",
+   "journal": "Frontiers in Bioengineering and Biotechnology",
+   "year": 2022,
+   "citations": 6,
+   "doi": "10.3389/fbioe.2022.842019"
+  },
+  {
+   "name": "MethylVI",
+   "functions": [
+    "sc",
+    "dl",
+    "integ"
+   ],
+   "platforms": [
+    "sc"
+   ],
+   "url": "https://openreview.net/forum?id=Mg2DM0F3AY",
+   "title": "A deep generative model of single-cell methylomic data",
+   "journal": "NeurIPS GenBio Workshop",
+   "year": 2023,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "YAME",
+   "functions": [
+    "util"
+   ],
+   "platforms": [
+    "bs",
+    "sc"
+   ],
+   "url": "https://github.com/zhou-lab/yame",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "citations": null,
+   "doi": ""
+  },
+  {
+   "name": "methyLImp",
+   "functions": [
+    "impute"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "Missing value estimation methods for DNA methylation data",
+   "journal": "Bioinformatics",
+   "year": 2019,
+   "citations": 68,
+   "doi": "10.1093/bioinformatics/btz134"
+  },
+  {
+   "name": "methyLImp2",
+   "functions": [
+    "impute"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "methyLImp2: faster missing value estimation for DNA methylation data",
+   "journal": "Bioinformatics",
+   "year": 2024,
+   "citations": 15,
+   "doi": "10.1093/bioinformatics/btae001"
+  },
+  {
+   "name": "BoostMe",
+   "functions": [
+    "impute"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "BoostMe accurately predicts DNA methylation values in whole-genome bisulfite sequencing of multiple human tissues",
+   "journal": "BMC Genomics",
+   "year": 2018,
+   "citations": 43,
+   "doi": "10.1186/s12864-018-4766-y"
+  },
+  {
+   "name": "CpGPT",
+   "functions": [
+    "dl",
+    "impute",
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "CpGPT: a Foundation Model for DNA Methylation",
+   "journal": "bioRxiv (preprint)",
+   "year": 2024,
+   "citations": 37,
+   "doi": "10.1101/2024.10.24.619766"
+  },
+  {
+   "name": "MethylGPT",
+   "functions": [
+    "dl",
+    "impute",
+    "clock"
+   ],
+   "platforms": [
+    "array"
+   ],
+   "url": "",
+   "title": "MethylGPT: a foundation model for the DNA methylome",
+   "journal": "bioRxiv (preprint)",
+   "year": 2024,
+   "citations": 33,
+   "doi": "10.1101/2024.10.30.621013"
+  },
+  {
+   "name": "WashU Epigenome Browser",
+   "functions": [
+    "viz"
+   ],
+   "platforms": [
+    "bs",
+    "array",
+    "ont"
+   ],
+   "url": "",
+   "title": "WashU Epigenome Browser update 2025",
+   "journal": "Nucleic Acids Research",
+   "year": 2025,
+   "citations": 14,
+   "doi": "10.1093/nar/gkaf387"
+  },
+  {
+   "name": "Methylation plotter",
+   "functions": [
+    "viz"
+   ],
+   "platforms": [
+    "bs",
+    "array"
+   ],
+   "url": "",
+   "title": "Methylation plotter: a web tool for dynamic visualization of DNA methylation data",
+   "journal": "Source Code for Biology and Medicine",
+   "year": 2014,
+   "citations": 61,
+   "doi": "10.1186/1751-0473-9-11"
+  },
+  {
+   "name": "methylGrapher",
+   "functions": [
+    "aln"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "methylGrapher: genome-graph-based processing of DNA methylation data from whole genome bisulfite sequencing",
+   "journal": "Nucleic Acids Research",
+   "year": 2025,
+   "citations": 15,
+   "doi": "10.1093/nar/gkaf028"
+  },
+  {
+   "name": "ViewBS",
+   "functions": [
+    "viz"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "ViewBS: a powerful toolkit for visualization of high-throughput bisulfite sequencing data",
+   "journal": "Bioinformatics",
+   "year": 2018,
+   "citations": 89,
+   "doi": "10.1093/bioinformatics/btx633"
+  },
+  {
+   "name": "Spatial-DMT pipeline",
+   "functions": [
+    "pipe",
+    "sc"
+   ],
+   "platforms": [
+    "spatial"
+   ],
+   "url": "",
+   "title": "Spatial joint profiling of DNA methylome and transcriptome in tissues",
+   "journal": "Nature",
+   "year": 2025,
+   "citations": 42,
+   "doi": "10.1038/s41586-025-09478-x"
+  },
+  {
+   "name": "BiQ Analyzer HT",
+   "functions": [
+    "aln",
+    "viz"
+   ],
+   "platforms": [
+    "targeted"
+   ],
+   "url": "",
+   "title": "BiQ Analyzer HT: locus-specific analysis of DNA methylation by high-throughput bisulfite sequencing",
+   "journal": "Nucleic Acids Research",
+   "year": 2011,
+   "citations": 118,
+   "doi": "10.1093/nar/gkr312"
+  },
+  {
+   "name": "QUMA",
+   "functions": [
+    "aln",
+    "viz"
+   ],
+   "platforms": [
+    "targeted"
+   ],
+   "url": "",
+   "title": "QUMA: quantification tool for methylation analysis",
+   "journal": "Nucleic Acids Research",
+   "year": 2008,
+   "citations": 570,
+   "doi": "10.1093/nar/gkn294"
+  },
+  {
+   "name": "DMtools",
+   "functions": [
+    "util"
+   ],
+   "platforms": [
+    "bs"
+   ],
+   "url": "",
+   "title": "DNA Methylation (DM) data format and DMtools for efficient DNA methylation data storage and analysis",
+   "journal": "bioRxiv (preprint)",
+   "year": 2023,
+   "citations": 1,
+   "doi": "10.1101/2023.11.27.568779"
+  }
+ ],
+ "reviews": [
+  {
+   "scope": "General",
+   "title": "Analysing and interpreting DNA methylation data",
+   "journal": "Nature Reviews Genetics",
+   "year": 2012,
+   "citations": 520,
+   "doi": "10.1038/nrg3273"
+  },
+  {
+   "scope": "General",
+   "title": "Principles and challenges of genome-wide DNA methylation analysis",
+   "journal": "Nature Reviews Genetics",
+   "year": 2010,
+   "citations": 1415,
+   "doi": "10.1038/nrg2732"
+  },
+  {
+   "scope": "General",
+   "title": "Profiling genome-wide DNA methylation",
+   "journal": "Epigenetics & Chromatin",
+   "year": 2016,
+   "citations": 355,
+   "doi": "10.1186/s13072-016-0075-3"
+  },
+  {
+   "scope": "Statistics and systems-level analysis",
+   "title": "Statistical and integrative system-level analysis of DNA methylation data",
+   "journal": "Nature Reviews Genetics",
+   "year": 2018,
+   "citations": 288,
+   "doi": "10.1038/nrg.2017.86"
+  },
+  {
+   "scope": "Bisulfite sequencing pipelines",
+   "title": "DNA methylation data by sequencing: experimental approaches and recommendations for tools and pipelines for data analysis",
+   "journal": "Clinical Epigenetics",
+   "year": 2019,
+   "citations": 106,
+   "doi": "10.1186/s13148-019-0795-x"
+  },
+  {
+   "scope": "Bisulfite sequencing analysis",
+   "title": "Strategies for analyzing bisulfite sequencing data",
+   "journal": "Journal of Biotechnology",
+   "year": 2017,
+   "citations": 167,
+   "doi": "10.1016/j.jbiotec.2017.08.007"
+  },
+  {
+   "scope": "Bisulfite aligner benchmark",
+   "title": "Comprehensive benchmarking of software for mapping whole genome bisulfite data: from read alignment to DNA methylation analysis",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2021,
+   "citations": 20,
+   "doi": "10.1093/bib/bbab021"
+  },
+  {
+   "scope": "Differential methylation",
+   "title": "A survey of the approaches for identifying differential methylation using bisulfite sequencing data",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2018,
+   "citations": 81,
+   "doi": "10.1093/bib/bbx013"
+  },
+  {
+   "scope": "Arrays",
+   "title": "Analysis pipelines and packages for Infinium HumanMethylation450 BeadChip (450k) data",
+   "journal": "Methods",
+   "year": 2015,
+   "citations": 123,
+   "doi": "10.1016/j.ymeth.2014.08.011"
+  },
+  {
+   "scope": "Arrays",
+   "title": "A comprehensive overview of Infinium HumanMethylation450 data processing",
+   "journal": "Briefings in Bioinformatics",
+   "year": 2014,
+   "citations": 184,
+   "doi": "10.1093/bib/bbt054"
+  },
+  {
+   "scope": "Single-cell",
+   "title": "Computational Methods for Single-Cell DNA Methylome Analysis",
+   "journal": "Genomics, Proteomics & Bioinformatics",
+   "year": 2023,
+   "citations": 29,
+   "doi": "10.1016/j.gpb.2022.05.007"
+  },
+  {
+   "scope": "Nanopore",
+   "title": "DNA methylation-calling tools for Oxford Nanopore sequencing: a survey and human epigenome-wide evaluation",
+   "journal": "Genome Biology",
+   "year": 2021,
+   "citations": 229,
+   "doi": "10.1186/s13059-021-02510-z"
+  },
+  {
+   "scope": "Cell-type deconvolution",
+   "title": "Cell-type deconvolution from DNA methylation: a review of recent applications",
+   "journal": "Human Molecular Genetics",
+   "year": 2017,
+   "citations": 204,
+   "doi": "10.1093/hmg/ddx275"
+  },
+  {
+   "scope": "Deconvolution benchmark",
+   "title": "Guidelines for cell-type heterogeneity quantification based on a comparative analysis of reference-free DNA methylation deconvolution software",
+   "journal": "BMC Bioinformatics",
+   "year": 2020,
+   "citations": 39,
+   "doi": "10.1186/s12859-019-3307-2"
+  },
+  {
+   "scope": "Epigenetic clocks",
+   "title": "DNA methylation-based biomarkers and the epigenetic clock theory of ageing",
+   "journal": "Nature Reviews Genetics",
+   "year": 2018,
+   "citations": 3112,
+   "doi": "10.1038/s41576-018-0004-3"
+  }
+ ]
+};

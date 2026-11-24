@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNA Methylation Tools</title>
+<meta name="description" content="A searchable catalogue of computational methods for DNA methylation data, grouped by function and data type.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>DNA Methylation Tools</h1>
+    <p class="lede">A catalogue of computational methods for DNA methylation data, grouped by what they do and which data they work on.</p>
+    <p class="stats" id="stats"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Filters">
+    <div class="row">
+      <input id="q" type="search" placeholder="Search tool, journal or paper title…" aria-label="Search">
+      <label class="sort">Sort
+        <select id="sort">
+          <option value="citations">Most cited</option>
+          <option value="year">Newest</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <button id="reset" type="button">Clear filters</button>
+    </div>
+    <div class="group">
+      <h2>Function</h2>
+      <div class="chips" id="f-functions"></div>
+    </div>
+    <div class="group">
+      <h2>Data type</h2>
+      <div class="chips" id="f-platforms"></div>
+    </div>
+  </section>
+
+  <p class="count" id="count" aria-live="polite"></p>
+
+  <div class="tablewrap">
+    <table id="tools">
+      <thead>
+        <tr>
+          <th data-sort="name">Tool</th>
+          <th>Function</th>
+          <th>Data type</th>
+          <th>Journal</th>
+          <th data-sort="year" class="num">Year</th>
+          <th data-sort="citations" class="num">Citations</th>
+          <th>Paper</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="empty" id="empty" hidden>No tools match these filters.</p>
+
+  <section class="reviews">
+    <h2>Reviews and benchmarks</h2>
+    <p class="hint">Good starting points for each area. No single review covers every data type, which is why this catalogue exists.</p>
+    <ul id="reviews"></ul>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Journal, year and citation counts come from <a href="https://www.crossref.org/">Crossref</a> and are refreshed by <code>scripts/build.py</code>. Crossref counts are usually lower than Google Scholar's. <span id="updated"></span></p>
+  <p>Missing a tool, or spotted a mistake? Edit <code>data/tools.tsv</code> and open a pull request.</p>
+</footer>
+
+<script src="data/tools.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

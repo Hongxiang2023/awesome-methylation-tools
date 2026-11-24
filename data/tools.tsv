@@ -1,0 +1,275 @@
+name	functions	platforms	doi	url	journal	year	title
+Bismark	aln	bs;sc	10.1093/bioinformatics/btr167				
+BSMAP	aln	bs	10.1186/1471-2105-10-232				
+BS-Seeker2	aln	bs	10.1186/1471-2164-14-774				
+BS-Seeker3	aln	bs	10.1186/s12859-018-2120-7				
+bwa-meth	aln	bs	10.48550/arxiv.1401.1129	https://github.com/brentp/bwa-meth	arXiv (preprint)	2014	Fast and accurate alignment of long bisulfite-seq reads
+BSBolt	aln	bs	10.1093/gigascience/giab033				
+BISCUIT	aln;snp	bs;sc	10.1093/nar/gkae097				
+gemBS	aln;pipe	bs	10.1093/bioinformatics/bty690				
+methylpy	aln;dm	bs;sc	10.1038/nature14465				
+BatMeth2	aln;dm	bs	10.1186/s12859-018-2593-4				
+WALT	aln	bs	10.1093/bioinformatics/btw490				
+abismal	aln	bs	10.1093/nargab/lqab115				
+BRAT-nova	aln	bs	10.1093/bioinformatics/btw226				
+segemehl	aln	bs	10.1093/bioinformatics/bts254				
+ERNE-BS5	aln	bs	10.1145/2382936.2382938				
+Arioc	aln	bs	10.1093/bioinformatics/bty167				
+HISAT-3N	aln	bs	10.1101/gr.275193.120				
+RRBSMAP	aln	bs	10.1093/bioinformatics/btr668				
+MethylCoder	aln	bs	10.1093/bioinformatics/btr394				
+FAME	aln	bs;sc	10.1093/bioinformatics/btad386				
+scBS-map	aln	sc	10.1093/bioinformatics/btz125				
+DNMTools (MethPipe)	aln;seg;dm;pipe	bs	10.1371/journal.pone.0081148				
+MethylDackel	aln;util	bs		https://github.com/dpryan79/MethylDackel			
+Trim Galore	qc	bs		https://github.com/FelixKrueger/TrimGalore			
+BSeQC	qc	bs	10.1093/bioinformatics/btt548				
+MOABS	aln;dm	bs	10.1186/gb-2014-15-2-r38				
+Bis-SNP	snp	bs	10.1186/gb-2012-13-7-r61				
+BS-SNPer	snp	bs	10.1093/bioinformatics/btv507				
+MethylExtract	snp;aln	bs	10.12688/f1000research.2-217.v1				
+CGmapTools	snp;het;util	bs	10.1093/bioinformatics/btx595				
+Revelio	snp	bs	10.1186/s12864-022-08691-6				
+nf-core/methylseq	pipe	bs	10.1038/s41587-020-0439-x				
+wg-blimp	pipe	bs	10.1186/s12859-020-3470-5				
+msPIPE	pipe	bs	10.1186/s12859-022-04925-2				
+Bicycle	pipe	bs	10.1093/bioinformatics/btx778				
+MethylStar	pipe	bs;sc	10.1186/s12864-020-06886-3				
+SAAP-RRBS	pipe	bs	10.1093/bioinformatics/bts337				
+snakePipes	pipe	bs	10.1093/bioinformatics/btz436				
+EpiDiverse EWAS	pipe;ewas	bs	10.3390/epigenomes5020012				
+methylKit	dm	bs	10.1186/gb-2012-13-10-r87				
+DSS	dm	bs	10.1093/nar/gku154				
+DSS (general design)	dm	bs	10.1093/bioinformatics/btw026				
+bsseq (BSmooth)	dm	bs	10.1186/gb-2012-13-10-r83				
+metilene	dm	bs	10.1101/gr.196394.115				
+methylSig	dm	bs	10.1093/bioinformatics/btu339				
+RADMeth	dm	bs	10.1186/1471-2105-15-215				
+dmrseq	dm	bs	10.1093/biostatistics/kxy007				
+DMRfinder	dm	bs	10.1186/s12859-017-1909-0				
+BiSeq	dm	bs;targeted	10.1093/bioinformatics/btt263				
+Defiant	dm	bs	10.1186/s12859-018-2037-1				
+comb-p	dm	bs;array	10.1093/bioinformatics/bts545				
+DMRcaller	dm	bs	10.1093/nar/gky602				
+HOME	dm	bs	10.1186/s12859-019-2845-y				
+swDMR	dm	bs	10.1371/journal.pone.0132866				
+edgeR (methylation)	dm	bs	10.12688/f1000research.13196.1				
+MACAU	dm	bs	10.1371/journal.pgen.1005650				
+methrix	util;qc	bs	10.1093/bioinformatics/btaa1048				
+CpGtools	dm;util	bs;array	10.1093/bioinformatics/btz916				
+MethylC-analyzer	dm;pipe	bs	10.1186/s40529-022-00366-5				
+DMRcate	dm	array;bs	10.1186/1756-8935-8-6				
+bumphunter	dm	array	10.1093/ije/dyr238				
+limma	dm	array	10.1093/nar/gkv007				
+Probe Lasso	dm	array	10.1016/j.ymeth.2014.10.036				
+mCSEA	dm	array	10.1093/bioinformatics/btz096				
+coMethDMR	dm;ewas	array	10.1093/nar/gkz590				
+ipDMR	dm	array	10.1093/bioinformatics/btaa732				
+minfi	qc;dm	array	10.1093/bioinformatics/btu049				
+ChAMP	qc;dm;pipe	array	10.1093/bioinformatics/btx513				
+RnBeads 2.0	qc;dm;pipe	array;bs	10.1186/s13059-019-1664-9				
+SeSAMe	qc;dm	array	10.1093/nar/gky691				
+wateRmelon	qc	array	10.1186/1471-2164-14-293				
+ENmix	qc	array	10.1093/nar/gkv907				
+meffil	qc;ewas	array	10.1093/bioinformatics/bty476				
+ewastools	qc	array	10.1186/s13148-018-0504-1				
+missMethyl	qc;dm;enrich	array	10.1093/bioinformatics/btv560				
+SWAN	qc	array	10.1186/gb-2012-13-6-r44				
+BMIQ	qc	array	10.1093/bioinformatics/bts680				
+Funnorm	qc	array	10.1186/s13059-014-0503-2				
+noob	qc	array	10.1093/nar/gkt090				
+ComBat	qc	array	10.1093/biostatistics/kxj037				
+sva	qc;ewas	array	10.1093/bioinformatics/bts034				
+RUVm	qc;dm	array	10.1093/nar/gkv526				
+MethylAid	qc	array	10.1093/bioinformatics/btu566				
+shinyMethyl	qc;viz	array	10.12688/f1000research.4680.2				
+RELIC	qc	array	10.1186/s12864-016-3426-3				
+lumi	qc	array	10.1093/bioinformatics/btn224				
+IMA	qc;dm	array	10.1093/bioinformatics/bts013				
+methylationArrayAnalysis	pipe	array	10.12688/f1000research.8839.2				
+Infinium probe annotation (Zhou)	util;qc	array	10.1093/nar/gkw967				
+EPIC probe evaluation (Pidsley)	util;qc	array	10.1186/s13059-016-1066-1				
+GOmeth	enrich	array	10.1186/s13059-021-02388-x				
+methylGSA	enrich	array	10.1093/bioinformatics/bty892				
+ebGSEA	enrich	array	10.1093/bioinformatics/btz073				
+LOLA	enrich	bs;array	10.1093/bioinformatics/btv612				
+GREAT	enrich	bs;array	10.1038/nbt.1630				
+KnowYourCG	enrich	array;bs;sc;spatial	10.1126/sciadv.adw3027				
+ELMER	integ;enrich	array	10.1093/bioinformatics/bty902				
+MethylMix	integ	array	10.1093/bioinformatics/btv020				
+annotatr	enrich	bs;array	10.1093/bioinformatics/btx183				
+eFORGE	enrich	array	10.1016/j.celrep.2016.10.059				
+bacon	ewas	array	10.1186/s13059-016-1131-9				
+OSCA	ewas	array	10.1186/s13059-019-1718-z				
+GLINT	ewas	array	10.1093/bioinformatics/btx059				
+CpGassoc	ewas	array	10.1093/bioinformatics/bts124				
+ReFACTor	ewas;deconv	array	10.1038/nmeth.3809				
+SmartSVA	ewas	array	10.1186/s12864-017-3808-1				
+coMET	viz;ewas	array	10.1186/s12859-015-0568-2				
+EWAS Atlas	db	array	10.1093/nar/gky1027				
+EWAS Catalog	db	array	10.12688/wellcomeopenres.17598.2				
+EWAS Data Hub	db	array	10.1093/nar/gkz840				
+GoDMC mQTL atlas	db;ewas	array	10.1038/s41588-021-00923-x				
+MethBank	db	bs;array	10.1093/nar/gkac969				
+MethHC	db	array	10.1093/nar/gkaa1104				
+DiseaseMeth	db	array;bs	10.1093/nar/gkab1088				
+MethSurv	db;viz	array	10.2217/epi-2017-0118				
+MEXPRESS	viz;db	array	10.1093/nar/gkz445				
+SMART App	viz;db	array	10.1186/s13072-019-0316-3				
+MethMotif	db	bs	10.1093/nar/gky1005				
+NGSmethDB	db	bs	10.1093/nar/gkw996				
+Human methylation atlas (UXM)	db;cfdna;deconv	bs;cfdna	10.1038/s41586-022-05580-6				
+Houseman method	deconv	array	10.1186/1471-2105-13-86				
+EpiDISH	deconv	array	10.1186/s12859-017-1511-5				
+RefFreeEWAS	deconv	array	10.1186/s12859-016-1140-4				
+MeDeCom	deconv	array;bs	10.1186/s13059-017-1182-6				
+EDec	deconv	array	10.1016/j.celrep.2016.10.057				
+MethylCIBERSORT	deconv	array	10.1038/s41467-018-05570-1				
+MethylResolver	deconv	array	10.1038/s42003-020-01146-2				
+FlowSorted.Blood.EPIC	deconv	array	10.1186/s13059-018-1448-7				
+IDOL	deconv	array	10.1186/s12859-016-0943-7				
+TCA	deconv;ewas	array	10.1038/s41467-019-11052-9				
+CellDMC	deconv;dm;ewas	array	10.1038/s41592-018-0213-x				
+methylCC	deconv	array;bs	10.1186/s13059-019-1827-8				
+HiBED	deconv	array	10.3389/fnins.2023.1198243				
+HiTIMED	deconv;cancer	array	10.1186/s12967-022-03736-6				
+EPISCORE	deconv	array	10.1186/s13059-020-02126-9				
+BayesCCE	deconv	array	10.1186/s13059-018-1513-2				
+ARIC	deconv	array	10.1093/bib/bbab362				
+EMeth	deconv	array	10.1038/s41598-021-84864-9				
+PRISM	deconv;het	bs	10.1093/bioinformatics/btz327				
+scMD	deconv	array;bs;sc	10.1038/s42003-023-05690-5				
+Horvath clock	clock	array	10.1186/gb-2013-14-10-r115				
+Hannum clock	clock	array	10.1016/j.molcel.2012.10.016				
+PhenoAge	clock	array	10.18632/aging.101414				
+GrimAge	clock	array	10.18632/aging.101684				
+GrimAge2	clock	array	10.18632/aging.204434				
+DunedinPACE	clock	array	10.7554/elife.73420				
+Skin & Blood clock	clock	array	10.18632/aging.101508				
+Zhang clock	clock	array	10.1186/s13073-019-0667-1				
+epiTOC	clock;cancer	array	10.1186/s13059-016-1064-3				
+epiTOC2	clock;cancer	array	10.1186/s13073-020-00752-3				
+methylclock	clock	array	10.1093/bioinformatics/btaa825				
+PC clocks	clock	array	10.1038/s43587-022-00248-2				
+Universal mammalian clock	clock	array	10.1038/s43587-023-00462-6				
+AltumAge	clock;dl	array	10.1038/s41514-022-00085-y				
+pyaging	clock	array	10.1093/bioinformatics/btae200				
+Biolearn	clock	array	10.1038/s43587-025-00987-y				
+scAge	clock	sc	10.1038/s43587-021-00134-3				
+DNAmTL	clock	array	10.18632/aging.102173				
+PedBE clock	clock	array	10.1073/pnas.1820843116				
+Causal clocks (DamAge/AdaptAge)	clock	array	10.1038/s43587-023-00557-0				
+MNP brain tumour classifier	cancer	array	10.1038/nature26000				
+Sarcoma classifier	cancer	array	10.1038/s41467-020-20603-4				
+EPICUP	cancer	array	10.1016/s1470-2045(16)30297-2				
+Sturgeon	cancer;dl	ont	10.1038/s41586-023-06615-2				
+nanoDx	cancer	ont	10.1111/nan.12856				
+NanoDx (same-day diagnosis)	cancer	ont	10.1007/s00401-017-1743-5				
+Rapid-CNS2	cancer;pipe	ont	10.1007/s00401-022-02415-6				
+crossNN	cancer;dl	ont;array;bs	10.1038/s43018-025-00976-5				
+MethyLYZR	cancer	ont	10.1038/s41591-024-03435-3				
+ML workflows for methylation classifiers (Maros)	cancer	array	10.1038/s41596-019-0251-6				
+mepylome	cancer;purity	array	10.1002/aisy.202500778				
+MethylBERT	cancer;dl;deconv	bs;cfdna	10.1038/s41467-025-55920-z				
+MethylNet	dl	array	10.1186/s12859-020-3443-8				
+MethScope	sc;cancer;deconv	sc;spatial;bs	10.32614/cran.package.methscope				
+InfiniumPurify	purity	array	10.1186/s13059-016-1143-5				
+MethylPurify	purity;dm	bs	10.1186/s13059-014-0419-x				
+PAMES	purity	array	10.1093/bioinformatics/bty011				
+RF_Purify	purity	array	10.1186/s12859-019-3014-z				
+LUMP	purity	array	10.1038/ncomms9971				
+conumee 2.0	purity	array	10.1093/bioinformatics/btae029				
+cnAnalysis450k	purity	array	10.1093/bioinformatics/btx156				
+meth_atlas	cfdna;deconv	array;cfdna	10.1038/s41467-018-07466-6				
+wgbstools	util;viz;het	bs;cfdna	10.26508/lsa.202503514				
+CelFiE	cfdna;deconv	bs;cfdna	10.1038/s41467-021-22901-x				
+CelFEER	cfdna;deconv	bs;cfdna	10.1093/nargab/lqad048				
+CancerLocator	cfdna;cancer	bs;cfdna	10.1186/s13059-017-1191-5				
+CancerDetector	cfdna;cancer	bs;cfdna	10.1093/nar/gky423				
+DISMIR	cfdna;cancer;dl	bs;cfdna	10.1093/bib/bbab250				
+Plasma DNA tissue mapping	cfdna;deconv	bs;cfdna	10.1073/pnas.1508736112				
+cfMeDIP-seq classifier	cfdna;cancer	enrich;cfdna	10.1038/s41586-018-0703-0				
+MONOD2 (methylation haplotype blocks)	cfdna;het	bs;cfdna	10.1038/ng.3805				
+cfSort	cfdna;deconv;dl	bs;cfdna	10.1073/pnas.2305236120				
+methclone	het	bs	10.1186/s13059-014-0472-5				
+Epipolymorphism	het	bs	10.1038/ng.2442				
+PDR (proportion of discordant reads)	het	bs	10.1016/j.ccell.2014.10.012				
+informME	het	bs	10.1038/ng.3811				
+Metheor	het	bs	10.1371/journal.pcbi.1010946				
+CluBCpG	het	bs	10.1186/s13059-020-02065-5				
+DAMEfinder	het	bs	10.1186/s13072-020-00346-8				
+MethHaplo	het	bs	10.1186/s12859-020-03798-7				
+amrfinder	het	bs	10.1073/pnas.1201310109				
+mHapTk	het;util	bs	10.1093/bioinformatics/btac650				
+DMEAS	het	bs	10.1093/bioinformatics/btt332				
+MethylSeekR	seg	bs	10.1093/nar/gkt599				
+MEDIPS	dm;qc	enrich	10.1093/bioinformatics/btt650				
+QSEA	dm	enrich	10.1093/nar/gkw1193				
+methylCRF	impute	enrich	10.1101/gr.152231.112				
+Batman	qc	enrich	10.1038/nbt1414				
+MeDUSA	pipe	enrich	10.1186/2047-217x-1-3				
+MLML	hmc	bs	10.1093/bioinformatics/btt459				
+OxyBS	hmc	array	10.1093/bioinformatics/btw158				
+oxBS-MLE	hmc	array;bs	10.1093/bioinformatics/btw527				
+Nanopolish	modcall	ont	10.1038/nmeth.4184				
+DeepSignal	modcall;dl	ont	10.1093/bioinformatics/btz276				
+DeepSignal-plant	modcall;dl	ont	10.1038/s41467-021-26278-9				
+DeepMod	modcall;dl	ont	10.1038/s41467-019-10168-2				
+DeepMod2	modcall;dl	ont	10.1038/s41467-024-45778-y				
+signalAlign	modcall	ont	10.1038/nmeth.4189				
+Tombo	modcall	ont	10.1101/094672				
+f5c	modcall	ont	10.1186/s12859-020-03697-x				
+Dorado	modcall	ont		https://github.com/nanoporetech/dorado			
+Megalodon	modcall	ont		https://github.com/nanoporetech/megalodon			
+modkit	util	ont;pacbio		https://github.com/nanoporetech/modkit			
+METEORE	modcall	ont	10.1038/s41467-021-23778-6				
+Rockfish	modcall;dl	ont	10.1038/s41467-024-49847-0				
+DeepBAM	modcall;dl	ont	10.1093/bib/bbae413				
+Uncalled4	modcall	ont	10.1038/s41592-025-02631-4				
+mCaller	modcall;hmc	ont	10.1038/s41467-019-08289-9				
+nanodisco	modcall;hmc	ont	10.1038/s41592-021-01109-3				
+NanoMethPhase	het	ont	10.1186/s13059-021-02283-5				
+MethPhaser	het	ont	10.1038/s41467-024-49588-0				
+Methylartist	viz	ont;pacbio	10.1093/bioinformatics/btac292				
+NanoMethViz	viz	ont	10.1371/journal.pcbi.1009524				
+modbamtools	viz;util	ont;pacbio	10.1101/2022.07.07.499188				
+pycoMeth	dm	ont	10.1186/s13059-023-02917-w				
+ccsmeth	modcall;dl;het	pacbio	10.1038/s41467-023-39784-9				
+SMRT kinetics (original)	modcall	pacbio	10.1038/nmeth.1459				
+HK model	modcall;dl	pacbio	10.1073/pnas.2019768118				
+fibertools	modcall;hmc	pacbio;ont	10.1101/gr.279095.124				
+pb-CpG-tools	util	pacbio		https://github.com/PacificBiosciences/pb-CpG-tools			
+MethSCAn	sc;dm	sc	10.1038/s41592-024-02347-x				
+Melissa	sc;impute	sc	10.1186/s13059-019-1665-8				
+DeepCpG	impute;dl	sc	10.1186/s13059-017-1189-z				
+EpiScanpy	sc	sc	10.1038/s41467-021-25131-3				
+ALLCools	sc;dm	sc	10.1038/s41586-020-03182-8				
+scMET	sc;dm	sc	10.1186/s13059-021-02329-8				
+Epiclomal	sc	sc	10.1371/journal.pcbi.1008270				
+MOFA+	integ	sc	10.1186/s13059-020-02015-1				
+BPRMeth	sc;impute	sc;bs	10.1093/bioinformatics/bty129				
+CaMelia	impute	sc	10.1093/bioinformatics/btab029				
+PDclust	sc	sc	10.1016/j.stemcr.2018.07.003				
+Amethyst	sc;dm	sc	10.1038/s42003-025-08859-2				
+vmrseq	sc;dm	sc	10.1186/s13059-024-03457-7				
+SINBAD	sc;pipe	sc	10.1101/2021.10.23.465577				
+LIGER	integ	sc	10.1016/j.cell.2019.05.006				
+MAPLE	integ	sc	10.1101/gr.267047.120				
+scAI	integ	sc	10.1186/s13059-020-1932-8				
+GLUE	integ;dl	sc	10.1038/s41587-022-01284-4				
+scMelody	sc	sc	10.3389/fbioe.2022.842019				
+MethylVI	sc;dl;integ	sc		https://openreview.net/forum?id=Mg2DM0F3AY	NeurIPS GenBio Workshop	2023	A deep generative model of single-cell methylomic data
+YAME	util	bs;sc		https://github.com/zhou-lab/yame			
+methyLImp	impute	array	10.1093/bioinformatics/btz134				
+methyLImp2	impute	array	10.1093/bioinformatics/btae001				
+BoostMe	impute	bs	10.1186/s12864-018-4766-y				
+CpGPT	dl;impute;clock	array	10.1101/2024.10.24.619766				
+MethylGPT	dl;impute;clock	array	10.1101/2024.10.30.621013				
+WashU Epigenome Browser	viz	bs;array;ont	10.1093/nar/gkaf387				
+Methylation plotter	viz	bs;array	10.1186/1751-0473-9-11				
+methylGrapher	aln	bs	10.1093/nar/gkaf028				
+ViewBS	viz	bs	10.1093/bioinformatics/btx633				
+Spatial-DMT pipeline	pipe;sc	spatial	10.1038/s41586-025-09478-x				
+BiQ Analyzer HT	aln;viz	targeted	10.1093/nar/gkr312				
+QUMA	aln;viz	targeted	10.1093/nar/gkn294				
+DMtools	util	bs	10.1101/2023.11.27.568779				

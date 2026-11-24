@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "aln": "Alignment & methylation calling",
+    "modcall": "Long-read modification calling",
+    "qc": "QC, preprocessing & normalization",
+    "dm": "Differential methylation",
+    "seg": "Methylome segmentation",
+    "deconv": "Cell-type deconvolution",
+    "clock": "Epigenetic clocks & aging",
+    "cancer": "Cancer classification & diagnostics",
+    "cfdna": "cfDNA & tissue of origin",
+    "purity": "Tumor purity & copy number",
+    "het": "Allele-specific, haplotype & heterogeneity",
+    "snp": "Variant calling from bisulfite data",
+    "impute": "Imputation & prediction",
+    "sc": "Single-cell clustering & analysis",
+    "integ": "Multi-omics integration",
+    "enrich": "Enrichment & functional interpretation",
+    "ewas": "EWAS & association statistics",
+    "viz": "Visualization",
+    "db": "Databases & atlases",
+    "pipe": "Pipelines & workflows",
+    "dl": "Deep learning & foundation models",
+    "hmc": "5hmC & other modifications",
+    "util": "Data formats & utilities"
+  },
+  "platforms": {
+    "array": "Array (Infinium)",
+    "bs": "Short-read (WGBS / RRBS / EM-seq)",
+    "targeted": "Targeted / amplicon",
+    "enrich": "Enrichment (MeDIP / MBD)",
+    "sc": "Single-cell",
+    "spatial": "Spatial",
+    "ont": "Nanopore",
+    "pacbio": "PacBio",
+    "cfdna": "cfDNA"
+  }
+}
