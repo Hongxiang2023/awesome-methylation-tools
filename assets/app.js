@@ -137,10 +137,6 @@
   $("stats").textContent = tools.length + " tools · " + Object.keys(vocab.functions).length + " functions · " +
     Object.keys(vocab.platforms).length + " data types · " + Math.min.apply(null, years) + "–" + Math.max.apply(null, years);
   $("updated").textContent = "Last refreshed " + D.updated + ".";
-  $("reviews").innerHTML = D.reviews.map(function (r) {
-    return '<li><span class="scope">' + esc(r.scope) + '</span><a href="https://doi.org/' + esc(r.doi) +
-      '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="src">' + esc(r.journal) + " " + r.year + "</span></li>";
-  }).join("");
 
   render();
 })();
