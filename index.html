@@ -5,71 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DNA Methylation Tools</title>
 <meta name="description" content="A searchable catalogue of computational methods for DNA methylation data, grouped by function and data type.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="top">
+<header class="masthead">
   <div class="wrap">
-    <h1>DNA Methylation Tools</h1>
-    <p class="lede">A catalogue of computational methods for DNA methylation data, grouped by what they do and which data they work on.</p>
-    <p class="stats" id="stats"></p>
+    <!-- CpG lollipop track: filled = methylated, open = unmethylated -->
+    <svg class="lollipops" id="lollipops" viewBox="0 0 320 30" role="img" aria-label="CpG methylation lollipop diagram"></svg>
+    <div class="titlebar">
+      <h1>DNA Methylation Tools</h1>
+      <p class="stats" id="stats"></p>
+    </div>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="controls" aria-label="Filters">
-    <div class="row">
-      <input id="q" type="search" placeholder="Search tool, journal or paper title…" aria-label="Search">
-      <label class="sort">Sort
+<div class="wrap layout">
+  <aside class="side" aria-label="Filters">
+    <input id="q" type="search" placeholder="Search tools, journals, titles" aria-label="Search">
+    <details class="filters" id="filters" open>
+      <summary>Filters <span id="nactive"></span></summary>
+      <div class="facet-group">
+        <h2>Data type</h2>
+        <div class="facets" id="f-platforms"></div>
+      </div>
+      <div class="facet-group">
+        <h2>Function</h2>
+        <div class="facets" id="f-functions"></div>
+      </div>
+    </details>
+  </aside>
+
+  <main>
+    <div class="toolbar">
+      <p class="count" id="count" aria-live="polite"></p>
+      <button id="reset" type="button" hidden>Clear filters</button>
+      <label class="sort" for="sort">Sort by
         <select id="sort">
-          <option value="citations">Most cited</option>
-          <option value="year">Newest</option>
-          <option value="name">Name A–Z</option>
+          <option value="citations">Citations</option>
+          <option value="year">Year</option>
+          <option value="name">Name</option>
         </select>
       </label>
-      <button id="reset" type="button">Clear filters</button>
     </div>
-    <div class="group">
-      <h2>Function</h2>
-      <div class="chips" id="f-functions"></div>
-    </div>
-    <div class="group">
-      <h2>Data type</h2>
-      <div class="chips" id="f-platforms"></div>
-    </div>
-  </section>
 
-  <p class="count" id="count" aria-live="polite"></p>
-
-  <div class="tablewrap">
     <table id="tools">
       <thead>
         <tr>
           <th data-sort="name">Tool</th>
           <th>Function</th>
-          <th>Data type</th>
+          <th>Data</th>
           <th>Journal</th>
           <th data-sort="year" class="num">Year</th>
-          <th data-sort="citations" class="num">Citations</th>
-          <th>Paper</th>
+          <th data-sort="citations" class="num">Cited by</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
-  </div>
-  <p class="empty" id="empty" hidden>No tools match these filters.</p>
+    <p class="empty" id="empty" hidden>No tools match these filters.</p>
 
-  <section class="reviews">
-    <h2>Reviews and benchmarks</h2>
-    <p class="hint">Good starting points for each area. No single review covers every data type, which is why this catalogue exists.</p>
-    <ul id="reviews"></ul>
-  </section>
-</main>
+    <section class="reviews">
+      <h2>Reviews and benchmarks</h2>
+      <ul id="reviews"></ul>
+    </section>
 
-<footer class="wrap foot">
-  <p>Journal, year and citation counts come from <a href="https://www.crossref.org/">Crossref</a> and are refreshed by <code>scripts/build.py</code>. Crossref counts are usually lower than Google Scholar's. <span id="updated"></span></p>
-  <p>Missing a tool, or spotted a mistake? Edit <code>data/tools.tsv</code> and open a pull request.</p>
-</footer>
+    <footer class="foot">
+      <p>Journal, year and citation counts come from <a href="https://www.crossref.org/">Crossref</a>; its counts run lower than Google Scholar's. <span id="updated"></span></p>
+      <p>To add or correct a tool, edit <code>data/tools.tsv</code> in the <a href="https://github.com/Hongxiang2023/awesome-methylation-tools">repository</a> and open a pull request.</p>
+    </footer>
+  </main>
+</div>
 
 <script src="data/tools.js"></script>
 <script src="assets/app.js"></script>
