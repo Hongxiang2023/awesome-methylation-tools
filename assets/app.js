@@ -113,7 +113,13 @@
   lollipops();
   buildFacets("platforms");
   buildFacets("functions");
-  if (window.matchMedia && window.matchMedia("(max-width: 900px)").matches) $("filters").removeAttribute("open");
+  // Filters are always open on wide screens and start folded on narrow ones.
+  if (window.matchMedia) {
+    var narrow = window.matchMedia("(max-width: 900px)");
+    var syncFilters = function () { $("filters").open = !narrow.matches; };
+    syncFilters();
+    if (narrow.addEventListener) narrow.addEventListener("change", syncFilters);
+  }
 
   $("q").addEventListener("input", function (e) { state.q = e.target.value.trim().toLowerCase(); render(); });
   $("sort").addEventListener("change", function (e) { state.sort = e.target.value; render(); });
