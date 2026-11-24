@@ -2,7 +2,7 @@
 
 A catalogue of computational methods for DNA methylation data. Every tool is tagged by **function** (alignment, differential methylation, deconvolution, cancer classification, …) and by **data type** (array, short-read bisulfite, single-cell, spatial, nanopore, PacBio, cfDNA, …), with its journal, publication year, citation count and paper link.
 
-**Browse the searchable site:** `https://YOUR-USERNAME.github.io/awesome-methylation-tools/` (replace once GitHub Pages is enabled), or open `index.html` locally.
+**Browse the searchable site:** <https://hongxiang2023.github.io/awesome-methylation-tools/> (live once GitHub Pages is enabled), or open `index.html` locally.
 
 ## Adding or correcting a tool
 
